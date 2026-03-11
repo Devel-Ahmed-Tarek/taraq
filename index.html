@@ -2195,6 +2195,7 @@
 
   let currentLang = "en";
   const BOOKING_EMAIL = "ahmed.tarek.devel@gamil.com";
+  const FORM_ENDPOINT = "https://formspree.io/f/YOUR_FORMSPREE_ID";
 
   function applyLanguage(lang) {
     const isArabic = lang === "ar";
@@ -2266,7 +2267,7 @@
     updateConsultoVisibility();
   }
 
-  // Simple submission: open email client with filled details
+  // When booking is submitted, open an email ready to send to the clinic
   const bookingForm = document.getElementById("bookingForm");
   const bookingSubmit = document.getElementById("bookingSubmit");
 
