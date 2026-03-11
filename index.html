@@ -2194,6 +2194,7 @@
   };
 
   let currentLang = "en";
+  const BOOKING_EMAIL = "ahmed.tarek.devel@gamil.com";
 
   function applyLanguage(lang) {
     const isArabic = lang === "ar";
@@ -2265,7 +2266,7 @@
     updateConsultoVisibility();
   }
 
-  // Simple front-end submission (no backend yet)
+  // Simple submission: open email client with filled details
   const bookingForm = document.getElementById("bookingForm");
   const bookingSubmit = document.getElementById("bookingSubmit");
 
@@ -2278,28 +2279,62 @@
         return;
       }
 
-      bookingSubmit.disabled = true;
-      bookingSubmit.textContent =
-        currentLang === "ar" ? "جاري الإرسال..." : "Sending...";
+      const name = document.getElementById("patientName")?.value || "";
+      const phone = document.getElementById("phone")?.value || "";
+      const service =
+        serviceTypeSelect &&
+        serviceTypeSelect.options[serviceTypeSelect.selectedIndex]
+          ? serviceTypeSelect.options[serviceTypeSelect.selectedIndex].text
+          : "";
+      const consulto =
+        consultoSelect && consultoSelect.value ? consultoSelect.value : "";
 
-      setTimeout(function () {
-        if (currentLang === "ar") {
-          alert(
-            "شكرًا لك. تم استلام طلب حجز الموعد، وسيتواصل معك فريقنا قريبًا لتأكيد الموعد."
-          );
-        } else {
-          alert(
-            "Thank you. Your appointment request has been received. Our team will contact you shortly to confirm."
-          );
-        }
-        bookingForm.reset();
-        updateConsultoVisibility();
-        bookingSubmit.disabled = false;
-        bookingSubmit.textContent =
-          currentLang === "ar"
-            ? "إرسال طلب الحجز"
-            : "Request Appointment";
-      }, 900);
+      let subject;
+      let body;
+
+      if (currentLang === "ar") {
+        subject = "طلب حجز موعد جديد من موقع تِرياق";
+        body =
+          "تم إرسال طلب حجز جديد من الموقع:" +
+          "\n\n" +
+          "الاسم: " +
+          name +
+          "\n" +
+          "رقم الهاتف: " +
+          phone +
+          "\n" +
+          "نوع الخدمة: " +
+          service +
+          (consulto ? "\nتخصّص كونسلتو: " + consulto : "") +
+          "\n\n" +
+          "تم الإرسال من نموذج الحجز على الموقع.";
+      } else {
+        subject = "New appointment request from Teriaq website";
+        body =
+          "A new appointment request was submitted from the website:" +
+          "\n\n" +
+          "Patient Name: " +
+          name +
+          "\n" +
+          "Phone Number: " +
+          phone +
+          "\n" +
+          "Service Type: " +
+          service +
+          (consulto ? "\nConsulto Specialty: " + consulto : "") +
+          "\n\n" +
+          "Submitted via the online booking form.";
+      }
+
+      const mailtoLink =
+        "mailto:" +
+        encodeURIComponent(BOOKING_EMAIL) +
+        "?subject=" +
+        encodeURIComponent(subject) +
+        "&body=" +
+        encodeURIComponent(body);
+
+      window.location.href = mailtoLink;
     });
   }
 
