@@ -252,6 +252,7 @@
       gap: 1.2rem;
       font-size: 0.82rem;
       color: var(--text-muted);
+      justify-content: center;
       align-items: center;
     }
 
@@ -1409,6 +1410,95 @@
       right: auto;
       left: 1.25rem;
     }
+
+    /* Booking result popup (replaces browser alert) */
+    .booking-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+    }
+
+    .booking-modal.is-open {
+      display: flex;
+    }
+
+    .booking-modal__backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.72);
+      backdrop-filter: blur(6px);
+    }
+
+    .booking-modal__panel {
+      position: relative;
+      max-width: 420px;
+      width: 100%;
+      background: #ffffff;
+      color: #0f172a;
+      border-radius: 22px;
+      padding: 1.6rem 1.5rem 1.4rem;
+      box-shadow: 0 28px 80px rgba(15, 23, 42, 0.35);
+      border: 1px solid #e5e7eb;
+      text-align: center;
+    }
+
+    .booking-modal__icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 999px;
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.75rem;
+    }
+
+    .booking-modal__icon--success {
+      background: #ecfdf5;
+      color: #059669;
+    }
+
+    .booking-modal__icon--error {
+      background: #fef2f2;
+      color: #dc2626;
+    }
+
+    .booking-modal__title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+      color: #0f172a;
+    }
+
+    .booking-modal__body {
+      font-size: 0.92rem;
+      color: #6b7280;
+      line-height: 1.55;
+      margin-bottom: 1.25rem;
+    }
+
+    .booking-modal__btn {
+      width: 100%;
+      border: none;
+      border-radius: 999px;
+      padding: 0.75rem 1.2rem;
+      font-size: 0.92rem;
+      font-weight: 600;
+      cursor: pointer;
+      background: linear-gradient(135deg, #05a4ff, #22c1ff);
+      color: #ffffff;
+      transition: transform 200ms ease, box-shadow 200ms ease;
+    }
+
+    .booking-modal__btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 36px rgba(5, 150, 255, 0.45);
+    }
   </style>
 </head>
 <body>
@@ -1476,10 +1566,7 @@
             </div>
 
             <div class="hero-meta">
-              <div class="hero-meta-item">
-                <span class="hero-meta-icon"><i class="bx bxs-graduation"></i></span>
-                <span data-i18n="hero.meta1">Kasr Al-Ainy Faculty of Medicine</span>
-              </div>
+         
               <div class="hero-meta-item">
                 <span class="hero-meta-icon"><i class="bx bx-badge-check"></i></span>
                 <span data-i18n="hero.meta2">Specialized Medical Services</span>
@@ -1608,6 +1695,11 @@
             <div class="service-icon"><i class="bx bx-group"></i></div>
             <h3 class="service-title" data-i18n="services.card11.title">Consulto (Multidisciplinary Consultation)</h3>
             <p class="service-text" data-i18n="services.card11.text">Egypt's first oncology Consulto: multiple specialists, one coordinated plan.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><i class="bx bx-home-heart"></i></div>
+            <h3 class="service-title" data-i18n="services.card12.title">Home care</h3>
+            <p class="service-text" data-i18n="services.card12.text">Professional nursing and supportive oncology care delivered in the comfort of your home.</p>
           </article>
         </div>
       </div>
@@ -1813,6 +1905,7 @@
                       <option value="Nutrition Consultation" data-i18n="booking.service3">Nutrition Consultation</option>
                       <option value="Online Consultation" data-i18n="booking.service4">Online Consultation</option>
                       <option value="ConsulTO" data-i18n="booking.service5">ConsulTO</option>
+                      <option value="Home care" data-i18n="booking.service6">Home care</option>
                     </select>
                   </div>
                 </div>
@@ -1959,6 +2052,25 @@
       </div>
     </section>
   </div>
+
+  <div
+    id="bookingModal"
+    class="booking-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="bookingModalTitle"
+    aria-hidden="true"
+  >
+    <div class="booking-modal__backdrop" id="bookingModalBackdrop" tabindex="-1"></div>
+    <div class="booking-modal__panel">
+      <div class="booking-modal__icon booking-modal__icon--success" id="bookingModalIconWrap">
+        <i class="bx bx-check" id="bookingModalIcon" aria-hidden="true"></i>
+      </div>
+      <h3 class="booking-modal__title" id="bookingModalTitle"></h3>
+      <p class="booking-modal__body" id="bookingModalBody"></p>
+      <button type="button" class="booking-modal__btn" id="bookingModalClose"></button>
+    </div>
+  </div>
 </body>
 <script>
   const translations = {
@@ -2011,6 +2123,9 @@
       "services.card5.title": "Consulto (Multidisciplinary Consultation)",
       "services.card5.text":
         "Egypt’s first oncology Consulto program, where physicians from multiple oncology disciplines collaborate to provide comprehensive evaluation and personalized treatment planning for each patient.",
+      "services.card12.title": "Home care",
+      "services.card12.text":
+        "Professional nursing and supportive oncology care delivered in the comfort of your home.",
       "trust.kicker": "Why Patients Trust Us",
       "trust.title": "Why Patients Trust Us",
       "trust.sub":
@@ -2057,6 +2172,7 @@
       "booking.service3": "Nutrition clinic",
       "booking.service4": "Online Consultation",
       "booking.service5": "Consolto MDT clinic",
+      "booking.service6": "Home care",
       "booking.consultoLabel": "ConsulTO Specialty",
       "booking.consultoPlaceholder": "Select a specialty",
       "booking.consulto1": "Gynecologic Oncology",
@@ -2146,6 +2262,9 @@
       "services.card10.text": "دعم التأهيل والتعافي بعد العلاج.",
       "services.card11.title": "كونسلتو (استشارة متعددة التخصّصات)",
       "services.card11.text": "أوّل كونسلتو أورام في مصر: تخصّصات متعدّدة، خطة علاج واحدة منسّقة.",
+      "services.card12.title": "الرعاية المنزلية",
+      "services.card12.text":
+        "دعم أورام وتمريض مهني في منزلك براحة وأمان.",
       "trust.kicker": "لماذا يثق بنا المرضى",
       "trust.title": "لماذا يثق بنا المرضى",
       "trust.sub":
@@ -2192,6 +2311,7 @@
       "booking.service3": "استشارة تغذية",
       "booking.service4": "استشارة أونلاين",
       "booking.service5": "كونسلتو (ConsulTO)",
+      "booking.service6": "الرعاية المنزلية",
       "booking.consultoLabel": "تخصّص كونسلتو",
       "booking.consultoPlaceholder": "اختر التخصّص",
       "booking.consulto1": "أورام النساء",
@@ -2230,8 +2350,12 @@
   };
 
   let currentLang = "en";
-  const BOOKING_EMAIL = "ahmed.tarek.devel@gamil.com";
-  const FORM_ENDPOINT = "https://formspree.io/f/YOUR_FORMSPREE_ID";
+
+  const WHATSAPP_API_URL =
+    "https://serves-whathapp.al-mosawweq.com/public/api/whatsapp/send-message";
+  const WHATSAPP_NOTIFY_NUMBER = "201027776882";
+  const WHATSAPP_API_KEY =
+    "wb_c2Vzc183Nzk3ZTY5MS00NzYyLTQ0ZDMtYTRhNS0zZGIyYWFjYmM3NDI.ry2kZ4GfbJv2xZAE6OMiMn4ksxxRCGtEUOV6_MFjuuc";
 
   function applyLanguage(lang) {
     const isArabic = lang === "ar";
@@ -2303,7 +2427,46 @@
     updateConsultoVisibility();
   }
 
-  // When booking is submitted, open an email ready to send to the clinic
+  function openBookingModal(isSuccess, title, body) {
+    const modal = document.getElementById("bookingModal");
+    const wrap = document.getElementById("bookingModalIconWrap");
+    const icon = document.getElementById("bookingModalIcon");
+    const btn = document.getElementById("bookingModalClose");
+    if (!modal || !wrap || !icon) return;
+    document.getElementById("bookingModalTitle").textContent = title;
+    document.getElementById("bookingModalBody").textContent = body;
+    wrap.className =
+      "booking-modal__icon " +
+      (isSuccess ? "booking-modal__icon--success" : "booking-modal__icon--error");
+    icon.className = isSuccess ? "bx bx-check" : "bx bx-x";
+    if (btn) btn.textContent = currentLang === "ar" ? "حسنًا" : "OK";
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeBookingModal() {
+    const modal = document.getElementById("bookingModal");
+    if (!modal) return;
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+
+  (function initBookingModal() {
+    const modal = document.getElementById("bookingModal");
+    const backdrop = document.getElementById("bookingModalBackdrop");
+    const btn = document.getElementById("bookingModalClose");
+    if (backdrop) backdrop.addEventListener("click", closeBookingModal);
+    if (btn) btn.addEventListener("click", closeBookingModal);
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && modal && modal.classList.contains("is-open")) {
+        closeBookingModal();
+      }
+    });
+  })();
+
+  // Booking form → WhatsApp API (notification to clinic number)
   const bookingForm = document.getElementById("bookingForm");
   const bookingSubmit = document.getElementById("bookingSubmit");
 
@@ -2326,14 +2489,11 @@
       const consulto =
         consultoSelect && consultoSelect.value ? consultoSelect.value : "";
 
-      let subject;
-      let body;
+      let message;
 
       if (currentLang === "ar") {
-        subject = "طلب حجز موعد جديد من موقع تِرياق";
-        body =
-          "تم إرسال طلب حجز جديد من الموقع:" +
-          "\n\n" +
+        message =
+          "طلب حجز موعد جديد من موقع تِرياق:\n\n" +
           "الاسم: " +
           name +
           "\n" +
@@ -2343,13 +2503,10 @@
           "نوع الخدمة: " +
           service +
           (consulto ? "\nتخصّص كونسلتو: " + consulto : "") +
-          "\n\n" +
-          "تم الإرسال من نموذج الحجز على الموقع.";
+          "\n\n(من نموذج الحجز على الموقع)";
       } else {
-        subject = "New appointment request from Teriaq website";
-        body =
-          "A new appointment request was submitted from the website:" +
-          "\n\n" +
+        message =
+          "New appointment request (Teriaq website):\n\n" +
           "Patient Name: " +
           name +
           "\n" +
@@ -2363,15 +2520,67 @@
           "Submitted via the online booking form.";
       }
 
-      const mailtoLink =
-        "mailto:" +
-        encodeURIComponent(BOOKING_EMAIL) +
-        "?subject=" +
-        encodeURIComponent(subject) +
-        "&body=" +
-        encodeURIComponent(body);
+      bookingSubmit.disabled = true;
+      const prevLabel = bookingSubmit.innerHTML;
+      bookingSubmit.textContent =
+        currentLang === "ar" ? "جاري الإرسال..." : "Sending...";
 
-      window.location.href = mailtoLink;
+      fetch(WHATSAPP_API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          phoneNumber: WHATSAPP_NOTIFY_NUMBER,
+          message: message,
+          api_key: WHATSAPP_API_KEY
+        })
+      })
+        .then(function (res) {
+          if (!res.ok) {
+            return res.text().then(function (t) {
+              throw new Error(t || res.statusText);
+            });
+          }
+          return res.json().catch(function () {
+            return {};
+          });
+        })
+        .then(function () {
+          if (currentLang === "ar") {
+            openBookingModal(
+              true,
+              "تم الإرسال بنجاح",
+              "شكرًا لك. تم إرسال طلبك، وسيتواصل معك فريقنا قريبًا."
+            );
+          } else {
+            openBookingModal(
+              true,
+              "Request sent",
+              "Thank you. Your request has been sent. Our team will contact you shortly."
+            );
+          }
+          bookingForm.reset();
+          updateConsultoVisibility();
+        })
+        .catch(function () {
+          if (currentLang === "ar") {
+            openBookingModal(
+              false,
+              "تعذّر الإرسال",
+              "تعذّر إرسال الطلب عبر الواتساب. جرّب مرة أخرى أو تواصل معنا بالهاتف."
+            );
+          } else {
+            openBookingModal(
+              false,
+              "Could not send",
+              "Could not send the request via WhatsApp. Please try again or call us."
+            );
+          }
+        })
+        .finally(function () {
+          bookingSubmit.disabled = false;
+          bookingSubmit.innerHTML = prevLabel;
+          applyLanguage(currentLang);
+        });
     });
   }
 
