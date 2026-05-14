@@ -1,2594 +1,2998 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Oncology Center – There's Always Hope</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Oncology Center in Kasr Al-Ainy – comprehensive oncology examination, physical therapy, nutrition consultation, online consultation, and ConsulTO specialist opinions with Dr. Ahmed El Halfawy."
-  />
-  <meta
-    name="keywords"
-    content="oncology center, oncology examination, cancer clinic Cairo, Kasr Al-Ainy, Dr Ahmed El Halfawy, physical therapy, nutrition consultation, online medical consultation, ConsulTO"
-  />
-  <meta name="author" content="Oncology Center - Dr. Ahmed El Halfawy" />
-  <meta property="og:title" content="Oncology Center – Comprehensive Medical Care with Expert Consultation" />
-  <meta
-    property="og:description"
-    content="Specialized oncology and multidisciplinary care at Kasr Al-Ainy, led by Dr. Ahmed El Halfawy. Book your consultation today."
-  />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Oncology Center" />
-  <!-- Modern icon set -->
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-  />
-  <style>
-    :root {
-      --bg-main: #041838;
-      --bg-deep: #020b23;
-      --primary: #22c1ff;
-      --primary-strong: #05a4ff;
-      --text-main: #ffffff;
-      --text-muted: #a9b7d4;
-      --card-bg: #0c2854;
-      --card-bg-inner: #09224a;
-      --shadow-soft: 0 32px 80px rgba(1, 8, 25, 0.9);
-      --radius-lg: 26px;
-      --radius-card: 30px;
-      --transition: 200ms ease-out;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <title>Oncology Center – There's Always Hope</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Oncology Center in Kasr Al-Ainy – comprehensive oncology examination, physical therapy, nutrition consultation, online consultation, and ConsulTO specialist opinions with Dr. Ahmed El Halfawy."
+    />
+    <meta
+      name="keywords"
+      content="oncology center, oncology examination, cancer clinic Cairo, Kasr Al-Ainy, Dr Ahmed El Halfawy, physical therapy, nutrition consultation, online medical consultation, ConsulTO"
+    />
+    <meta name="author" content="Oncology Center - Dr. Ahmed El Halfawy" />
+    <meta
+      property="og:title"
+      content="Oncology Center – Comprehensive Medical Care with Expert Consultation"
+    />
+    <meta
+      property="og:description"
+      content="Specialized oncology and multidisciplinary care at Kasr Al-Ainy, led by Dr. Ahmed El Halfawy. Book your consultation today."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Oncology Center" />
 
-    html {
-      scroll-behavior: smooth;
-    }
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-11038407660"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+      gtag("config", "AW-11038407660");
+    </script>
 
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
-        "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top left, #06499b 0, #020b23 55%, #000814 100%);
-      color: var(--text-main);
-      -webkit-font-smoothing: antialiased;
-    }
+    <!-- Modern icon set -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <style>
+      :root {
+        --bg-main: #041838;
+        --bg-deep: #020b23;
+        --primary: #22c1ff;
+        --primary-strong: #05a4ff;
+        --text-main: #ffffff;
+        --text-muted: #a9b7d4;
+        --card-bg: #0c2854;
+        --card-bg-inner: #09224a;
+        --shadow-soft: 0 32px 80px rgba(1, 8, 25, 0.9);
+        --radius-lg: 26px;
+        --radius-card: 30px;
+        --transition: 200ms ease-out;
+      }
 
-    img {
-      max-width: 100%;
-      display: block;
-    }
+      html {
+        scroll-behavior: smooth;
+      }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-    button {
-      font-family: inherit;
-    }
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "SF Pro Text",
+          "Segoe UI",
+          sans-serif;
+        background: radial-gradient(
+          circle at top left,
+          #06499b 0,
+          #020b23 55%,
+          #000814 100%
+        );
+        color: var(--text-main);
+        -webkit-font-smoothing: antialiased;
+      }
 
-    .page-shell {
-      min-height: 100vh;
-      background:
-        radial-gradient(circle at 0% 0%, rgba(37, 99, 235, 0.35) 0, transparent 45%),
-        radial-gradient(circle at 100% 100%, rgba(56, 189, 248, 0.25) 0, transparent 55%),
-        linear-gradient(135deg, #020b23, #000814);
-      display: flex;
-      flex-direction: column;
-    }
+      img {
+        max-width: 100%;
+        display: block;
+      }
 
-    .section {
-      padding: 2.4rem 1.25rem;
-    }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
 
-    @media (min-width: 992px) {
+      button {
+        font-family: inherit;
+      }
+
+      .page-shell {
+        min-height: 100vh;
+        background:
+          radial-gradient(
+            circle at 0% 0%,
+            rgba(37, 99, 235, 0.35) 0,
+            transparent 45%
+          ),
+          radial-gradient(
+            circle at 100% 100%,
+            rgba(56, 189, 248, 0.25) 0,
+            transparent 55%
+          ),
+          linear-gradient(135deg, #020b23, #000814);
+        display: flex;
+        flex-direction: column;
+      }
+
       .section {
-        padding: 3.6rem 1.8rem;
+        padding: 2.4rem 1.25rem;
       }
-    }
 
-    .container {
-      max-width: 1120px;
-      margin: 0 auto;
-    }
-
-    /* HERO SECTION (FIRST SECTION) */
-
-    .hero {
-      padding-top: 3.2rem;
-      padding-bottom: 3.2rem;
-    }
-
-    .hero-grid {
-      display: grid;
-      gap: 2.2rem;
-      align-items: center;
-    }
-
-    @media (min-width: 900px) {
-      .hero-grid {
-        grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      @media (min-width: 992px) {
+        .section {
+          padding: 3.6rem 1.8rem;
+        }
       }
-    }
 
-    .hero-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.45rem;
-      width: 65%;
-      margin: auto;
-      padding: 0.25rem 0.75rem 0.25rem 0.3rem;
-      border-radius: 999px;
-      background: rgba(5, 22, 46, 0.9);
-      border: 1px solid rgba(56, 189, 248, 0.5);
-      margin-bottom: 1.2rem;
-      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.7);
-    }
-
-    .hero-eyebrow-icon {
-      width: 26px;
-      height: 26px;
-      border-radius: 999px;
-      background: radial-gradient(circle at 30% 0, #fefce8 0, #fde68a 40%, #facc15 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.9rem;
-    }
-
-    .hero-eyebrow-icon i {
-      font-size: 1.1rem;
-      color: #92400e;
-    }
-
-    .hero-eyebrow-text {
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #e0f2fe;
-    }
-
-    .hero-heading {
-      font-size: 2rem;
-      line-height: 1.1;
-      letter-spacing: -0.04em;
-      margin-bottom: 0.9rem;
-    }
-
-    @media (min-width: 992px) {
-      .hero-heading {
-        font-size: 3.1rem;
+      .container {
+        max-width: 1120px;
+        margin: 0 auto;
       }
-    }
 
-    .hero-heading span {
-      color: var(--primary);
-    }
-
-    .hero-sub {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-      max-width: 35rem;
-      margin-bottom: 1.6rem;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.85rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .hero-heading,
-    .hero-sub,
-    .hero-meta {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .hero-actions {
-      justify-content: center;
-    }
-
-    .btn-primary,
-    .btn-outline {
-      border-radius: 999px;
-      padding: 0.75rem 1.7rem;
-      font-size: 0.92rem;
-      font-weight: 600;
-      border: none;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.4rem;
-      white-space: nowrap;
-      transition:
-        transform var(--transition),
-        box-shadow var(--transition),
-        background var(--transition),
-        color var(--transition),
-        border-color var(--transition);
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, var(--primary), var(--primary-strong));
-      color: #011627;
-      box-shadow: 0 20px 50px rgba(5, 150, 255, 0.55);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 24px 60px rgba(5, 150, 255, 0.75);
-    }
-
-    .btn-primary:active {
-      transform: translateY(0);
-      box-shadow: 0 14px 40px rgba(5, 150, 255, 0.6);
-    }
-
-    .btn-outline {
-      background: transparent;
-      border: 1px solid rgba(148, 163, 184, 0.5);
-      color: #e5edff;
-    }
-
-    .btn-outline:hover {
-      background: rgba(15, 23, 42, 0.65);
-      border-color: rgba(148, 163, 184, 0.9);
-    }
-
-    .hero-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.2rem;
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      justify-content: center;
-      align-items: center;
-    }
-
-    .hero-meta-item {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-    }
-
-    .hero-meta-icon {
-      width: 22px;
-      height: 22px;
-      border-radius: 999px;
-      background: rgba(15, 23, 42, 0.8);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #22c1ff;
-    }
-
-    .hero-meta-icon i {
-      font-size: 1.1rem;
-    }
-
-    /* RIGHT HERO CARD (LOGO) */
-
-    .hero-card-wrapper {
-      display: flex;
-      justify-content: flex-end;
-    }
-
-    .hero-card {
-      border-radius: var(--radius-card);
-      padding: 1.2rem;
-      background: radial-gradient(circle at 10% 0, #0f3e8c 0, #061735 55%, #020b23 100%);
-      box-shadow: var(--shadow-soft);
-      border: 1px solid rgba(15, 23, 42, 0.85);
-      max-width: 360px;
-      width: 100%;
-    }
-
-    .hero-logo-surface {
-      border-radius: 24px;
-      padding: 1.4rem;
-      background: whitesmoke;
-      box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.85);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .hero-logo-surface img {
-      border-radius: 18px;
-    }
-
-    /* ABOUT SECTION (SECOND SECTION) */
-
-    .about-section {
-      background: #ffffff;
-      color: #0f172a;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-    }
-
-    .about-inner {
-      max-width: 880px;
-      margin: 0 auto 2.2rem;
-      text-align: center;
-    }
-
-    .about-kicker {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: #0ea5e9;
-      margin-bottom: 0.5rem;
-    }
-
-    .about-title {
-      font-size: 1.7rem;
-      letter-spacing: -0.03em;
-      margin-bottom: 0.5rem;
-      color: #0f172a;
-    }
-
-    @media (min-width: 992px) {
-      .about-title {
-        font-size: 2rem;
-      }
-    }
-
-    .about-sub {
-      font-size: 0.95rem;
-      color: #6b7280;
-    }
-
-    .about-approach-title {
-      font-size: 1.25rem;
-      font-weight: 600;
-      color: #0f172a;
-      text-align: center;
-      margin: 0 auto 1.2rem;
-      max-width: 880px;
-    }
-
-    .about-cards {
-      display: grid;
-      gap: 1.2rem;
-    }
-
-    @media (min-width: 768px) {
-      .about-cards {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-    }
-
-    .about-card {
-      background: #ffffff;
-      border-radius: 18px;
-      padding: 1.3rem 1.1rem 1.4rem;
-      box-shadow: 0 20px 60px rgba(15, 23, 42, 0.06);
-      border: 1px solid #e5e7eb;
-      text-align: left;
-      transition:
-        transform var(--transition),
-        box-shadow var(--transition),
-        border-color var(--transition);
-    }
-
-    html[dir="rtl"] .about-card {
-      text-align: right;
-    }
-
-    .about-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 25px 70px rgba(15, 23, 42, 0.14);
-      border-color: #d1d5db;
-    }
-
-    .about-icon {
-      width: 42px;
-      height: 42px;
-      border-radius: 16px;
-      background: linear-gradient(135deg, #e0f2fe, #dbeafe);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 0.8rem;
-      color: #0284c7;
-    }
-
-    .about-icon i {
-      font-size: 1.4rem;
-    }
-
-    .about-card-title {
-      font-size: 1rem;
-      font-weight: 600;
-      margin-bottom: 0.35rem;
-    }
-
-    .about-card-text {
-      font-size: 0.9rem;
-      color: #6b7280;
-    }
-
-    /* SERVICES SECTION (THIRD SECTION) */
-
-    .services-section {
-      background: #f4f7fb;
-      color: #0f172a;
-    }
-
-    .services-inner {
-      text-align: center;
-      max-width: 820px;
-      margin: 0 auto 2rem;
-    }
-
-    .services-kicker {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: #0ea5e9;
-      margin-bottom: 0.5rem;
-    }
-
-    .services-title {
-      font-size: 1.7rem;
-      letter-spacing: -0.03em;
-      margin-bottom: 0.45rem;
-    }
-
-    @media (min-width: 992px) {
-      .services-title {
-        font-size: 2rem;
-      }
-    }
-
-    .services-sub {
-      font-size: 0.95rem;
-      color: #6b7280;
-    }
-
-    .services-grid {
-      display: grid;
-      gap: 1.1rem;
-      margin-top: 1.5rem;
-    }
-
-    @media (min-width: 768px) {
-      .services-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-    }
-
-    .service-card {
-      background: #ffffff;
-      border-radius: 20px;
-      padding: 1.4rem 1.3rem 1.5rem;
-      box-shadow: 0 20px 50px rgba(15, 23, 42, 0.06);
-      border: 1px solid #e5e7eb;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      transition:
-        transform var(--transition),
-        box-shadow var(--transition),
-        border-color var(--transition);
-    }
-
-    .service-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 25px 70px rgba(15, 23, 42, 0.14);
-      border-color: #d1d5db;
-    }
-
-    .service-icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 16px;
-      background: linear-gradient(135deg, #e0f2fe, #dbeafe);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #0284c7;
-      margin-bottom: 0.4rem;
-    }
-
-    .service-icon i {
-      font-size: 1.4rem;
-    }
-
-    .service-title {
-      font-size: 1rem;
-      font-weight: 600;
-    }
-
-    .service-text {
-      font-size: 0.9rem;
-      color: #6b7280;
-    }
-
-    /* TRUST SECTION */
-
-    .trust-section {
-      background: linear-gradient(to bottom, #ffffff 0, #f9fafb 40%, #f3f4f6 100%);
-      color: #0f172a;
-    }
-
-    .trust-inner {
-      text-align: center;
-      max-width: 820px;
-      margin: 0 auto 2.1rem;
-    }
-
-    .trust-kicker {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: #0ea5e9;
-      margin-bottom: 0.5rem;
-    }
-
-    .trust-title {
-      font-size: 1.7rem;
-      letter-spacing: -0.03em;
-      margin-bottom: 0.35rem;
-    }
-
-    .trust-sub {
-      font-size: 0.95rem;
-      color: #6b7280;
-    }
-
-    .trust-grid {
-      display: grid;
-      gap: 1rem;
-      margin-top: 1.6rem;
-    }
-
-    @media (min-width: 768px) {
-      .trust-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-
-    .trust-card {
-      background: #ffffff;
-      border-radius: 18px;
-      padding: 0.85rem 1rem;
-      border: 1px solid #e5e7eb;
-      box-shadow: 0 18px 55px rgba(148, 163, 184, 0.25);
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      font-size: 0.9rem;
-      color: #374151;
-    }
-
-    .trust-icon {
-      width: 26px;
-      height: 26px;
-      border-radius: 999px;
-      background: #ecfdf5;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #16a34a;
-    }
-
-    .trust-icon i {
-      font-size: 1.1rem;
-    }
-
-    /* DOCTOR SECTION */
-
-    .doctor-section {
-      background: #ffffff;
-      color: #0f172a;
-    }
-
-    .doctor-inner {
-      max-width: 960px;
-      margin: 0 auto;
-    }
-
-    .doctor-header {
-      text-align: left;
-      margin-bottom: 1.5rem;
-    }
-
-    .doctor-kicker {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: #0ea5e9;
-      margin-bottom: 0.4rem;
-    }
-
-    .doctor-title {
-      font-size: 1.6rem;
-      letter-spacing: -0.03em;
-      margin-bottom: 0.25rem;
-    }
-
-    .doctor-sub {
-      font-size: 0.92rem;
-      color: #6b7280;
-    }
-
-    .doctor-card {
-      margin-top: 0.7rem;
-      border-radius: 24px;
-      padding: 1.5rem 1.5rem 1.6rem;
-      background: #ffffff;
-      border: 1px solid #e5e7eb;
-      box-shadow: 0 24px 70px rgba(148, 163, 184, 0.35);
-      display: grid;
-      gap: 1.4rem;
-    }
-
-    @media (min-width: 900px) {
-      .doctor-card {
-        grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-        align-items: center;
-      }
-    }
-
-    .doctor-info-title {
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: #6b7280;
-      margin-bottom: 0.3rem;
-    }
-
-    .doctor-name {
-      font-size: 1.25rem;
-      font-weight: 700;
-      margin-bottom: 0.15rem;
-    }
-
-    .doctor-role {
-      font-size: 0.9rem;
-      color: #6b7280;
-      margin-bottom: 0.45rem;
-    }
-
-    .doctor-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-bottom: 0.7rem;
-    }
-
-    .doctor-badge {
-      padding: 0.3rem 0.75rem;
-      border-radius: 999px;
-      background: #e0f2fe;
-      color: #0369a1;
-      font-size: 0.78rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-    }
-
-    .doctor-badge i {
-      font-size: 1rem;
-    }
-
-    .doctor-text {
-      font-size: 0.9rem;
-      color: #4b5563;
-      margin-bottom: 0.7rem;
-    }
-
-    .doctor-photo-card {
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 24px 70px rgba(148, 163, 184, 0.45);
-      border: 1px solid #e5e7eb;
-      background: #0b295c;
-    }
-
-    .doctor-photo-card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    /* GALLERY SECTION */
-
-    .gallery-section {
-      background: #f9fafb;
-      color: #0f172a;
-    }
-
-    .gallery-inner {
-      max-width: 1120px;
-      margin: 0 auto;
-    }
-
-    .gallery-header {
-      text-align: left;
-      margin-bottom: 1.6rem;
-    }
-
-    .gallery-kicker {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: #0ea5e9;
-      margin-bottom: 0.4rem;
-    }
-
-    .gallery-title {
-      font-size: 1.5rem;
-      letter-spacing: -0.03em;
-      margin-bottom: 0.25rem;
-    }
-
-    .gallery-sub {
-      font-size: 0.9rem;
-      color: #6b7280;
-    }
-
-    .gallery-grid {
-      margin-top: 1.4rem;
-      display: grid;
-      gap: 1rem;
-    }
-
-    @media (min-width: 768px) {
-      .gallery-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-    }
-
-    .gallery-item {
-      border-radius: 18px;
-      overflow: hidden;
-      position: relative;
-      box-shadow: 0 22px 60px rgba(148, 163, 184, 0.4);
-      border: 1px solid #e5e7eb;
-      background: #020617;
-    }
-
-    .gallery-item img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      display: block;
-      transition: transform var(--transition), opacity var(--transition);
-    }
-
-    .gallery-item:hover img {
-      transform: scale(1.03);
-      opacity: 0.96;
-    }
-
-    .gallery-caption {
-      position: absolute;
-      left: 0.9rem;
-      bottom: 0.8rem;
-      padding: 0.35rem 0.7rem;
-      border-radius: 999px;
-      background: rgba(15, 23, 42, 0.78);
-      color: #e5e7eb;
-      font-size: 0.78rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-    }
-
-    .gallery-caption i {
-      font-size: 0.95rem;
-      color: #38bdf8;
-    }
-
-    /* BOOKING SECTION (FOURTH SECTION) */
-
-    .booking-section {
-      background: radial-gradient(circle at top, #e0f2fe 0, #f9fafb 45%, #f3f4f6 100%);
-      color: #0f172a;
-    }
-
-    .booking-inner {
-      max-width: 720px;
-      margin: 0 auto;
-    }
-
-    .booking-header {
-      text-align: center;
-      margin-bottom: 1.8rem;
-    }
-
-    .booking-kicker {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: #0ea5e9;
-      margin-bottom: 0.45rem;
-    }
-
-    .booking-title {
-      font-size: 1.7rem;
-      letter-spacing: -0.03em;
-      margin-bottom: 0.35rem;
-    }
-
-    @media (min-width: 992px) {
-      .booking-title {
-        font-size: 2rem;
-      }
-    }
-
-    .booking-sub {
-      font-size: 0.95rem;
-      color: #6b7280;
-      max-width: 36rem;
-      margin: 0 auto;
-    }
-
-    .booking-card {
-      background: rgba(255, 255, 255, 0.96);
-      border-radius: 24px;
-      padding: 1.6rem 1.6rem 1.8rem;
-      box-shadow: 0 26px 70px rgba(15, 23, 42, 0.16);
-      border: 1px solid rgba(148, 163, 184, 0.4);
-      position: relative;
-      overflow: hidden;
-      transition:
-        transform var(--transition),
-        box-shadow var(--transition),
-        border-color var(--transition);
-      backdrop-filter: blur(10px);
-    }
-
-    .booking-card::before {
-      content: "";
-      position: absolute;
-      inset: -40% -40% auto -40%;
-      height: 120px;
-      background: radial-gradient(circle at top, rgba(56, 189, 248, 0.35), transparent 60%);
-      opacity: 0.9;
-      pointer-events: none;
-    }
-
-    .booking-card-header {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 1.1rem;
-      gap: 0.6rem;
-    }
-
-    .booking-card-title {
-      font-size: 1rem;
-      font-weight: 600;
-      color: #0f172a;
-    }
-
-    .booking-card-sub {
-      font-size: 0.8rem;
-      color: #6b7280;
-    }
-
-    .booking-chip {
-      padding: 0.3rem 0.75rem;
-      border-radius: 999px;
-      background: rgba(219, 234, 254, 0.85);
-      font-size: 0.78rem;
-      color: #1d4ed8;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-    }
-
-    .booking-chip i {
-      font-size: 1rem;
-    }
-
-    .form-grid {
-      display: grid;
-      gap: 0.9rem;
-      text-align: left;
-    }
-
-    @media (min-width: 640px) {
-      .form-grid-2 {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-
-    .form-field {
-      display: flex;
-      flex-direction: column;
-      gap: 0.25rem;
-      font-size: 0.85rem;
-    }
-
-    .form-label {
-      font-weight: 500;
-      color: #111827;
-    }
-
-    .form-input,
-    .form-select {
-      border-radius: 999px;
-      border: 1px solid #d1d5db;
-      padding: 0.7rem 0.9rem;
-      font-size: 0.9rem;
-      width: 100%;
-      background: #ffffff;
-      color: #111827;
-      outline: none;
-      transition: border-color var(--transition), box-shadow var(--transition);
-    }
-
-    .form-input::placeholder {
-      color: #9ca3af;
-    }
-
-    html[dir="rtl"] .form-input,
-    html[dir="rtl"] .form-select {
-      text-align: right;
-      direction: rtl;
-    }
-
-    html[dir="ltr"] .form-input,
-    html[dir="ltr"] .form-select {
-      text-align: left;
-      direction: ltr;
-    }
-
-    /* Phone field stays LTR for better digit input */
-    html[dir="rtl"] #phone {
-      direction: ltr;
-      text-align: left;
-    }
-
-    .form-input:focus,
-    .form-select:focus {
-      border-color: #0ea5e9;
-      box-shadow: 0 0 0 1px rgba(14, 165, 233, 0.4);
-    }
-
-    .form-select-wrapper {
-      position: relative;
-    }
-
-    .form-select-wrapper::after {
-      content: "▾";
-      position: absolute;
-      right: 0.9rem;
-      top: 50%;
-      transform: translateY(-52%);
-      font-size: 0.8rem;
-      color: #9ca3af;
-      pointer-events: none;
-    }
-
-    .consulto-group {
-      display: none;
-    }
-
-    .form-helper {
-      font-size: 0.78rem;
-      color: #6b7280;
-    }
-
-    .booking-submit {
-      margin-top: 1.1rem;
-    }
-
-    .btn-booking-primary {
-      width: 100%;
-      border-radius: 999px;
-      padding: 0.9rem 1.5rem;
-      border: none;
-      cursor: pointer;
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: #ffffff;
-      background: linear-gradient(135deg, #05a4ff, #22c1ff);
-      box-shadow: 0 18px 45px rgba(5, 150, 255, 0.5);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.35rem;
-      transition: transform var(--transition), box-shadow var(--transition);
-    }
-
-    .btn-booking-primary:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 22px 55px rgba(5, 150, 255, 0.7);
-    }
-
-    .btn-booking-primary:active {
-      transform: translateY(0);
-      box-shadow: 0 14px 40px rgba(5, 150, 255, 0.55);
-    }
-
-    .booking-note {
-      font-size: 0.78rem;
-      color: #6b7280;
-      margin-top: 0.6rem;
-    }
-
-    .booking-side {
-      display: grid;
-      gap: 0.9rem;
-      font-size: 0.9rem;
-      color: #4b5563;
-    }
-
-    .booking-side-card {
-      background: rgba(255, 255, 255, 0.86);
-      border-radius: 18px;
-      padding: 1rem 1rem 1.05rem;
-      border: 1px solid #e5e7eb;
-      box-shadow: 0 18px 50px rgba(148, 163, 184, 0.25);
-      display: flex;
-      gap: 0.7rem;
-      align-items: flex-start;
-    }
-
-    .booking-side-icon {
-      width: 32px;
-      height: 32px;
-      border-radius: 14px;
-      background: linear-gradient(135deg, #e0f2fe, #dbeafe);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #0284c7;
-    }
-
-    .booking-side-icon i {
-      font-size: 1.4rem;
-    }
-
-    .booking-side-title {
-      font-weight: 600;
-      margin-bottom: 0.1rem;
-      color: #111827;
-      font-size: 0.92rem;
-    }
-
-    .booking-side-text {
-      font-size: 0.86rem;
-      color: #6b7280;
-    }
-
-    /* FINAL CTA + FOOTER SECTION */
-
-    .final-section {
-      background: radial-gradient(circle at top, #0b295c 0, #020617 50%, #000814 100%);
-      color: #e5e7eb;
-      padding-top: 3rem;
-    }
-
-    .final-inner {
-      max-width: 720px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .final-logo-wrap {
-      width: 88px;
-      height: 88px;
-      border-radius: 28px;
-      margin: 0 auto 1.1rem;
-      background: radial-gradient(circle at 30% 0, #38bdf8 0, #0f172a 55%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 20px 55px rgba(15, 23, 42, 0.7);
-    }
-
-    .final-logo-wrap img {
-      width: 70px;
-      height: 70px;
-      border-radius: 22px;
-      object-fit: contain;
-      background: #020617;
-    }
-
-    .final-title {
-      font-size: 1.6rem;
-      letter-spacing: -0.03em;
-      margin-bottom: 0.35rem;
-    }
-
-    .final-sub {
-      font-size: 0.9rem;
-      color: #9ca3af;
-      max-width: 30rem;
-      margin: 0 auto 1.2rem;
-    }
-
-    .final-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.3rem;
-      padding: 0.8rem 1.8rem;
-      border-radius: 999px;
-      border: none;
-      cursor: pointer;
-      background: linear-gradient(135deg, #22c1ff, #00b4ff);
-      color: #020617;
-      font-weight: 600;
-      font-size: 0.94rem;
-      box-shadow: 0 16px 40px rgba(56, 189, 248, 0.55);
-      margin-bottom: 2.4rem;
-      transition: transform var(--transition), box-shadow var(--transition);
-    }
-
-    .final-btn:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 20px 55px rgba(56, 189, 248, 0.7);
-    }
-
-    .final-footer {
-      border-top: 1px solid #020617;
-      padding: 1.8rem 0 2.1rem;
-      margin-top: 0.2rem;
-    }
-
-    .final-footer-grid {
-      max-width: 960px;
-      margin: 0 auto;
-      display: grid;
-      gap: 1.5rem;
-      font-size: 0.86rem;
-      color: #9ca3af;
-      text-align: left;
-    }
-
-    @media (min-width: 768px) {
-      .final-footer-grid {
-        grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1fr);
-      }
-    }
-
-    .final-footer-logo {
-      display: flex;
-      align-items: center;
-      gap: 0.85rem;
-    }
-
-    .final-footer-logo img {
-      width: 48px;
-      height: 48px;
-      border-radius: 14px;
-      background: #020617;
-      object-fit: contain;
-    }
-
-    .final-footer-brand {
-      font-weight: 600;
-      color: #e5e7eb;
-      margin-bottom: 0.15rem;
-    }
-
-    .final-footer-text {
-      font-size: 0.82rem;
-      color: #6b7280;
-      max-width: 18rem;
-    }
-
-    .final-footer-heading {
-      font-size: 0.86rem;
-      font-weight: 600;
-      color: #e5e7eb;
-      margin-bottom: 0.55rem;
-    }
-
-    .final-footer-list {
-      display: grid;
-      gap: 0.25rem;
-    }
-
-    .final-link {
-      color: #9ca3af;
-      transition: color var(--transition);
-    }
-
-    .final-link:hover {
-      color: #e5e7eb;
-    }
-
-    .final-socials {
-      display: flex;
-      gap: 0.5rem;
-      margin-top: 0.4rem;
-    }
-
-    .final-socials a {
-      width: 30px;
-      height: 30px;
-      border-radius: 999px;
-      border: 1px solid #1f2937;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #9ca3af;
-      font-size: 1.1rem;
-      transition: background var(--transition), color var(--transition), border-color var(--transition);
-    }
-
-    .final-socials a:hover {
-      background: #0f172a;
-      color: #e5e7eb;
-      border-color: #111827;
-    }
-
-    .final-bottom {
-      max-width: 960px;
-      margin: 1.3rem auto 0;
-      padding-top: 0.7rem;
-      border-top: 1px solid #020617;
-      font-size: 0.78rem;
-      color: #6b7280;
-      display: flex;
-      justify-content: space-between;
-      gap: 0.7rem;
-      flex-wrap: wrap;
-    }
-
-    html[dir="rtl"] .final-footer-grid {
-      text-align: right;
-    }
-
-    html[dir="rtl"] .final-bottom {
-      direction: rtl;
-      text-align: right;
-      justify-content: space-between;
-    }
-
-    /* Mobile responsiveness */
-    @media (max-width: 768px) {
-      .section {
-        padding: 2rem 1.1rem;
-      }
+      /* HERO SECTION (FIRST SECTION) */
 
       .hero {
-        padding-top: 2.2rem;
-        padding-bottom: 2.4rem;
+        padding-top: 3.2rem;
+        padding-bottom: 3.2rem;
+      }
+
+      .hero-grid {
+        display: grid;
+        gap: 2.2rem;
+        align-items: center;
+      }
+
+      @media (min-width: 900px) {
+        .hero-grid {
+          grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+        }
       }
 
       .hero-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        width: 65%;
+        margin: auto;
+        padding: 0.25rem 0.75rem 0.25rem 0.3rem;
+        border-radius: 999px;
+        background: rgba(5, 22, 46, 0.9);
+        border: 1px solid rgba(56, 189, 248, 0.5);
+        margin-bottom: 1.2rem;
+        box-shadow: 0 16px 40px rgba(15, 23, 42, 0.7);
+      }
+
+      .hero-eyebrow-icon {
+        width: 26px;
+        height: 26px;
+        border-radius: 999px;
+        background: radial-gradient(
+          circle at 30% 0,
+          #fefce8 0,
+          #fde68a 40%,
+          #facc15 100%
+        );
         display: flex;
+        align-items: center;
         justify-content: center;
-      }
-
-      .hero-heading {
-        font-size: 1.7rem;
-      }
-
-      .hero-sub {
         font-size: 0.9rem;
       }
 
+      .hero-eyebrow-icon i {
+        font-size: 1.1rem;
+        color: #92400e;
+      }
+
+      .hero-eyebrow-text {
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #e0f2fe;
+      }
+
+      .hero-heading {
+        font-size: 2rem;
+        line-height: 1.1;
+        letter-spacing: -0.04em;
+        margin-bottom: 0.9rem;
+      }
+
+      @media (min-width: 992px) {
+        .hero-heading {
+          font-size: 3.1rem;
+        }
+      }
+
+      .hero-heading span {
+        color: var(--primary);
+      }
+
+      .hero-sub {
+        font-size: 0.95rem;
+        color: var(--text-muted);
+        max-width: 35rem;
+        margin-bottom: 1.6rem;
+      }
+
       .hero-actions {
-        flex-direction: column;
-        align-items: stretch;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.85rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .hero-heading,
+      .hero-sub,
+      .hero-meta {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-actions {
+        justify-content: center;
       }
 
       .btn-primary,
       .btn-outline {
-        width: 100%;
+        border-radius: 999px;
+        padding: 0.75rem 1.7rem;
+        font-size: 0.92rem;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
         justify-content: center;
+        gap: 0.4rem;
+        white-space: nowrap;
+        transition:
+          transform var(--transition),
+          box-shadow var(--transition),
+          background var(--transition),
+          color var(--transition),
+          border-color var(--transition);
       }
 
-      .hero-card-wrapper {
+      .btn-primary {
+        background: linear-gradient(
+          135deg,
+          var(--primary),
+          var(--primary-strong)
+        );
+        color: #011627;
+        box-shadow: 0 20px 50px rgba(5, 150, 255, 0.55);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 24px 60px rgba(5, 150, 255, 0.75);
+      }
+
+      .btn-primary:active {
+        transform: translateY(0);
+        box-shadow: 0 14px 40px rgba(5, 150, 255, 0.6);
+      }
+
+      .btn-outline {
+        background: transparent;
+        border: 1px solid rgba(148, 163, 184, 0.5);
+        color: #e5edff;
+      }
+
+      .btn-outline:hover {
+        background: rgba(15, 23, 42, 0.65);
+        border-color: rgba(148, 163, 184, 0.9);
+      }
+
+      .hero-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.2rem;
+        font-size: 0.82rem;
+        color: var(--text-muted);
         justify-content: center;
+        align-items: center;
+      }
+
+      .hero-meta-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+
+      .hero-meta-icon {
+        width: 22px;
+        height: 22px;
+        border-radius: 999px;
+        background: rgba(15, 23, 42, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #22c1ff;
+      }
+
+      .hero-meta-icon i {
+        font-size: 1.1rem;
+      }
+
+      /* RIGHT HERO CARD (LOGO) */
+
+      .hero-card-wrapper {
+        display: flex;
+        justify-content: flex-end;
       }
 
       .hero-card {
-        max-width: 280px;
+        border-radius: var(--radius-card);
+        padding: 1.2rem;
+        background: radial-gradient(
+          circle at 10% 0,
+          #0f3e8c 0,
+          #061735 55%,
+          #020b23 100%
+        );
+        box-shadow: var(--shadow-soft);
+        border: 1px solid rgba(15, 23, 42, 0.85);
+        max-width: 360px;
+        width: 100%;
       }
 
-      .form-field.consulto-inline {
+      .hero-logo-surface {
+        border-radius: 24px;
+        padding: 1.4rem;
+        background: whitesmoke;
+        box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.85);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hero-logo-surface img {
+        border-radius: 18px;
+      }
+
+      /* ABOUT SECTION (SECOND SECTION) */
+
+      .about-section {
+        background: #ffffff;
+        color: #0f172a;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+      }
+
+      .about-inner {
+        max-width: 880px;
+        margin: 0 auto 2.2rem;
+        text-align: center;
+      }
+
+      .about-kicker {
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: #0ea5e9;
+        margin-bottom: 0.5rem;
+      }
+
+      .about-title {
+        font-size: 1.7rem;
+        letter-spacing: -0.03em;
+        margin-bottom: 0.5rem;
+        color: #0f172a;
+      }
+
+      @media (min-width: 992px) {
+        .about-title {
+          font-size: 2rem;
+        }
+      }
+
+      .about-sub {
+        font-size: 0.95rem;
+        color: #6b7280;
+      }
+
+      .about-approach-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #0f172a;
+        text-align: center;
+        margin: 0 auto 1.2rem;
+        max-width: 880px;
+      }
+
+      .about-cards {
+        display: grid;
+        gap: 1.2rem;
+      }
+
+      @media (min-width: 768px) {
+        .about-cards {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+
+      .about-card {
+        background: #ffffff;
+        border-radius: 18px;
+        padding: 1.3rem 1.1rem 1.4rem;
+        box-shadow: 0 20px 60px rgba(15, 23, 42, 0.06);
+        border: 1px solid #e5e7eb;
+        text-align: left;
+        transition:
+          transform var(--transition),
+          box-shadow var(--transition),
+          border-color var(--transition);
+      }
+
+      html[dir="rtl"] .about-card {
+        text-align: right;
+      }
+
+      .about-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 25px 70px rgba(15, 23, 42, 0.14);
+        border-color: #d1d5db;
+      }
+
+      .about-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 16px;
+        background: linear-gradient(135deg, #e0f2fe, #dbeafe);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0.8rem;
+        color: #0284c7;
+      }
+
+      .about-icon i {
+        font-size: 1.4rem;
+      }
+
+      .about-card-title {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.35rem;
+      }
+
+      .about-card-text {
+        font-size: 0.9rem;
+        color: #6b7280;
+      }
+
+      /* SERVICES SECTION (THIRD SECTION) */
+
+      .services-section {
+        background: #f4f7fb;
+        color: #0f172a;
+      }
+
+      .services-inner {
+        text-align: center;
+        max-width: 820px;
+        margin: 0 auto 2rem;
+      }
+
+      .services-kicker {
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: #0ea5e9;
+        margin-bottom: 0.5rem;
+      }
+
+      .services-title {
+        font-size: 1.7rem;
+        letter-spacing: -0.03em;
+        margin-bottom: 0.45rem;
+      }
+
+      @media (min-width: 992px) {
+        .services-title {
+          font-size: 2rem;
+        }
+      }
+
+      .services-sub {
+        font-size: 0.95rem;
+        color: #6b7280;
+      }
+
+      .services-grid {
+        display: grid;
+        gap: 1.1rem;
+        margin-top: 1.5rem;
+      }
+
+      @media (min-width: 768px) {
+        .services-grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+
+      .service-card {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 1.4rem 1.3rem 1.5rem;
+        box-shadow: 0 20px 50px rgba(15, 23, 42, 0.06);
+        border: 1px solid #e5e7eb;
+        display: flex;
         flex-direction: column;
+        gap: 0.5rem;
+        transition:
+          transform var(--transition),
+          box-shadow var(--transition),
+          border-color var(--transition);
+      }
+
+      .service-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 25px 70px rgba(15, 23, 42, 0.14);
+        border-color: #d1d5db;
+      }
+
+      .service-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 16px;
+        background: linear-gradient(135deg, #e0f2fe, #dbeafe);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #0284c7;
+        margin-bottom: 0.4rem;
+      }
+
+      .service-icon i {
+        font-size: 1.4rem;
+      }
+
+      .service-title {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      .service-text {
+        font-size: 0.9rem;
+        color: #6b7280;
+      }
+
+      /* TRUST SECTION */
+
+      .trust-section {
+        background: linear-gradient(
+          to bottom,
+          #ffffff 0,
+          #f9fafb 40%,
+          #f3f4f6 100%
+        );
+        color: #0f172a;
+      }
+
+      .trust-inner {
+        text-align: center;
+        max-width: 820px;
+        margin: 0 auto 2.1rem;
+      }
+
+      .trust-kicker {
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: #0ea5e9;
+        margin-bottom: 0.5rem;
+      }
+
+      .trust-title {
+        font-size: 1.7rem;
+        letter-spacing: -0.03em;
+        margin-bottom: 0.35rem;
+      }
+
+      .trust-sub {
+        font-size: 0.95rem;
+        color: #6b7280;
+      }
+
+      .trust-grid {
+        display: grid;
+        gap: 1rem;
+        margin-top: 1.6rem;
+      }
+
+      @media (min-width: 768px) {
+        .trust-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      .trust-card {
+        background: #ffffff;
+        border-radius: 18px;
+        padding: 0.85rem 1rem;
+        border: 1px solid #e5e7eb;
+        box-shadow: 0 18px 55px rgba(148, 163, 184, 0.25);
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-size: 0.9rem;
+        color: #374151;
+      }
+
+      .trust-icon {
+        width: 26px;
+        height: 26px;
+        border-radius: 999px;
+        background: #ecfdf5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #16a34a;
+      }
+
+      .trust-icon i {
+        font-size: 1.1rem;
+      }
+
+      /* DOCTOR SECTION */
+
+      .doctor-section {
+        background: #ffffff;
+        color: #0f172a;
+      }
+
+      .doctor-inner {
+        max-width: 960px;
+        margin: 0 auto;
+      }
+
+      .doctor-header {
+        text-align: left;
+        margin-bottom: 1.5rem;
+      }
+
+      .doctor-kicker {
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: #0ea5e9;
+        margin-bottom: 0.4rem;
+      }
+
+      .doctor-title {
+        font-size: 1.6rem;
+        letter-spacing: -0.03em;
+        margin-bottom: 0.25rem;
+      }
+
+      .doctor-sub {
+        font-size: 0.92rem;
+        color: #6b7280;
+      }
+
+      .doctor-card {
+        margin-top: 0.7rem;
+        border-radius: 24px;
+        padding: 1.5rem 1.5rem 1.6rem;
+        background: #ffffff;
+        border: 1px solid #e5e7eb;
+        box-shadow: 0 24px 70px rgba(148, 163, 184, 0.35);
+        display: grid;
+        gap: 1.4rem;
+      }
+
+      @media (min-width: 900px) {
+        .doctor-card {
+          grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+          align-items: center;
+        }
+      }
+
+      .doctor-info-title {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: #6b7280;
+        margin-bottom: 0.3rem;
+      }
+
+      .doctor-name {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 0.15rem;
+      }
+
+      .doctor-role {
+        font-size: 0.9rem;
+        color: #6b7280;
+        margin-bottom: 0.45rem;
+      }
+
+      .doctor-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        margin-bottom: 0.7rem;
+      }
+
+      .doctor-badge {
+        padding: 0.3rem 0.75rem;
+        border-radius: 999px;
+        background: #e0f2fe;
+        color: #0369a1;
+        font-size: 0.78rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.3rem;
+      }
+
+      .doctor-badge i {
+        font-size: 1rem;
+      }
+
+      .doctor-text {
+        font-size: 0.9rem;
+        color: #4b5563;
+        margin-bottom: 0.7rem;
+      }
+
+      .doctor-photo-card {
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 24px 70px rgba(148, 163, 184, 0.45);
+        border: 1px solid #e5e7eb;
+        background: #0b295c;
+      }
+
+      .doctor-photo-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      /* GALLERY SECTION */
+
+      .gallery-section {
+        background: #f9fafb;
+        color: #0f172a;
+      }
+
+      .gallery-inner {
+        max-width: 1120px;
+        margin: 0 auto;
+      }
+
+      .gallery-header {
+        text-align: left;
+        margin-bottom: 1.6rem;
+      }
+
+      .gallery-kicker {
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: #0ea5e9;
+        margin-bottom: 0.4rem;
+      }
+
+      .gallery-title {
+        font-size: 1.5rem;
+        letter-spacing: -0.03em;
+        margin-bottom: 0.25rem;
+      }
+
+      .gallery-sub {
+        font-size: 0.9rem;
+        color: #6b7280;
+      }
+
+      .gallery-grid {
+        margin-top: 1.4rem;
+        display: grid;
+        gap: 1rem;
+      }
+
+      @media (min-width: 768px) {
+        .gallery-grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+
+      .gallery-item {
+        border-radius: 18px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 22px 60px rgba(148, 163, 184, 0.4);
+        border: 1px solid #e5e7eb;
+        background: #020617;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        display: block;
+        transition:
+          transform var(--transition),
+          opacity var(--transition);
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.03);
+        opacity: 0.96;
+      }
+
+      .gallery-caption {
+        position: absolute;
+        left: 0.9rem;
+        bottom: 0.8rem;
+        padding: 0.35rem 0.7rem;
+        border-radius: 999px;
+        background: rgba(15, 23, 42, 0.78);
+        color: #e5e7eb;
+        font-size: 0.78rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.3rem;
+      }
+
+      .gallery-caption i {
+        font-size: 0.95rem;
+        color: #38bdf8;
+      }
+
+      /* BOOKING SECTION (FOURTH SECTION) */
+
+      .booking-section {
+        background: radial-gradient(
+          circle at top,
+          #e0f2fe 0,
+          #f9fafb 45%,
+          #f3f4f6 100%
+        );
+        color: #0f172a;
+      }
+
+      .booking-inner {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+
+      .booking-header {
+        text-align: center;
+        margin-bottom: 1.8rem;
+      }
+
+      .booking-kicker {
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: #0ea5e9;
+        margin-bottom: 0.45rem;
+      }
+
+      .booking-title {
+        font-size: 1.7rem;
+        letter-spacing: -0.03em;
+        margin-bottom: 0.35rem;
+      }
+
+      @media (min-width: 992px) {
+        .booking-title {
+          font-size: 2rem;
+        }
+      }
+
+      .booking-sub {
+        font-size: 0.95rem;
+        color: #6b7280;
+        max-width: 36rem;
+        margin: 0 auto;
+      }
+
+      .booking-card {
+        background: rgba(255, 255, 255, 0.96);
+        border-radius: 24px;
+        padding: 1.6rem 1.6rem 1.8rem;
+        box-shadow: 0 26px 70px rgba(15, 23, 42, 0.16);
+        border: 1px solid rgba(148, 163, 184, 0.4);
+        position: relative;
+        overflow: hidden;
+        transition:
+          transform var(--transition),
+          box-shadow var(--transition),
+          border-color var(--transition);
+        backdrop-filter: blur(10px);
+      }
+
+      .booking-card::before {
+        content: "";
+        position: absolute;
+        inset: -40% -40% auto -40%;
+        height: 120px;
+        background: radial-gradient(
+          circle at top,
+          rgba(56, 189, 248, 0.35),
+          transparent 60%
+        );
+        opacity: 0.9;
+        pointer-events: none;
+      }
+
+      .booking-card-header {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.1rem;
+        gap: 0.6rem;
+      }
+
+      .booking-card-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #0f172a;
+      }
+
+      .booking-card-sub {
+        font-size: 0.8rem;
+        color: #6b7280;
+      }
+
+      .booking-chip {
+        padding: 0.3rem 0.75rem;
+        border-radius: 999px;
+        background: rgba(219, 234, 254, 0.85);
+        font-size: 0.78rem;
+        color: #1d4ed8;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.3rem;
+      }
+
+      .booking-chip i {
+        font-size: 1rem;
+      }
+
+      .form-grid {
+        display: grid;
+        gap: 0.9rem;
+        text-align: left;
+      }
+
+      @media (min-width: 640px) {
+        .form-grid-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      .form-field {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        font-size: 0.85rem;
+      }
+
+      .form-label {
+        font-weight: 500;
+        color: #111827;
+      }
+
+      .form-input,
+      .form-select {
+        border-radius: 999px;
+        border: 1px solid #d1d5db;
+        padding: 0.7rem 0.9rem;
+        font-size: 0.9rem;
+        width: 100%;
+        background: #ffffff;
+        color: #111827;
+        outline: none;
+        transition:
+          border-color var(--transition),
+          box-shadow var(--transition);
+      }
+
+      .form-input::placeholder {
+        color: #9ca3af;
+      }
+
+      html[dir="rtl"] .form-input,
+      html[dir="rtl"] .form-select {
+        text-align: right;
+        direction: rtl;
+      }
+
+      html[dir="ltr"] .form-input,
+      html[dir="ltr"] .form-select {
+        text-align: left;
+        direction: ltr;
+      }
+
+      /* Phone field stays LTR for better digit input */
+      html[dir="rtl"] #phone {
+        direction: ltr;
+        text-align: left;
+      }
+
+      .form-input:focus,
+      .form-select:focus {
+        border-color: #0ea5e9;
+        box-shadow: 0 0 0 1px rgba(14, 165, 233, 0.4);
+      }
+
+      .form-select-wrapper {
+        position: relative;
+      }
+
+      .form-select-wrapper::after {
+        content: "▾";
+        position: absolute;
+        right: 0.9rem;
+        top: 50%;
+        transform: translateY(-52%);
+        font-size: 0.8rem;
+        color: #9ca3af;
+        pointer-events: none;
+      }
+
+      .consulto-group {
+        display: none;
+      }
+
+      .form-helper {
+        font-size: 0.78rem;
+        color: #6b7280;
+      }
+
+      .booking-submit {
+        margin-top: 1.1rem;
+      }
+
+      .btn-booking-primary {
+        width: 100%;
+        border-radius: 999px;
+        padding: 0.9rem 1.5rem;
+        border: none;
+        cursor: pointer;
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #ffffff;
+        background: linear-gradient(135deg, #05a4ff, #22c1ff);
+        box-shadow: 0 18px 45px rgba(5, 150, 255, 0.5);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.35rem;
+        transition:
+          transform var(--transition),
+          box-shadow var(--transition);
+      }
+
+      .btn-booking-primary:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 22px 55px rgba(5, 150, 255, 0.7);
+      }
+
+      .btn-booking-primary:active {
+        transform: translateY(0);
+        box-shadow: 0 14px 40px rgba(5, 150, 255, 0.55);
+      }
+
+      .booking-note {
+        font-size: 0.78rem;
+        color: #6b7280;
+        margin-top: 0.6rem;
+      }
+
+      .booking-side {
+        display: grid;
+        gap: 0.9rem;
+        font-size: 0.9rem;
+        color: #4b5563;
+      }
+
+      .booking-side-card {
+        background: rgba(255, 255, 255, 0.86);
+        border-radius: 18px;
+        padding: 1rem 1rem 1.05rem;
+        border: 1px solid #e5e7eb;
+        box-shadow: 0 18px 50px rgba(148, 163, 184, 0.25);
+        display: flex;
+        gap: 0.7rem;
         align-items: flex-start;
       }
-    }
 
-    @media (max-width: 480px) {
-      .hero-heading {
-        font-size: 1.55rem;
+      .booking-side-icon {
+        width: 32px;
+        height: 32px;
+        border-radius: 14px;
+        background: linear-gradient(135deg, #e0f2fe, #dbeafe);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #0284c7;
       }
 
-      .hero-sub {
-        max-width: 100%;
+      .booking-side-icon i {
+        font-size: 1.4rem;
       }
-    }
 
-    /* Language toggle */
-    .lang-toggle {
-      position: fixed;
-      top: 1rem;
-      right: 1rem;
-      z-index: 1000;
-      border-radius: 999px;
-      border: 1px solid rgba(148, 163, 184, 0.6);
-      background: rgba(15, 23, 42, 0.9);
-      color: #e5e7eb;
-      padding: 0.4rem 0.9rem;
-      font-size: 0.8rem;
-      font-weight: 500;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      backdrop-filter: blur(8px);
-      box-shadow: 0 14px 40px rgba(15, 23, 42, 0.6);
-    }
+      .booking-side-title {
+        font-weight: 600;
+        margin-bottom: 0.1rem;
+        color: #111827;
+        font-size: 0.92rem;
+      }
 
-    .lang-toggle i {
-      font-size: 1rem;
-    }
+      .booking-side-text {
+        font-size: 0.86rem;
+        color: #6b7280;
+      }
 
-    body[dir="rtl"] .lang-toggle {
-      right: auto;
-      left: 1rem;
-    }
+      /* FINAL CTA + FOOTER SECTION */
 
-    /* Floating global contact buttons (WhatsApp + Phone) */
-    .floating-contact {
-      position: fixed;
-      right: 1.25rem;
-      bottom: 1.4rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.6rem;
-      z-index: 900;
-    }
+      .final-section {
+        background: radial-gradient(
+          circle at top,
+          #0b295c 0,
+          #020617 50%,
+          #000814 100%
+        );
+        color: #e5e7eb;
+        padding-top: 3rem;
+      }
 
-    .floating-btn {
-      width: 48px;
-      height: 48px;
-      border-radius: 999px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.55);
-      cursor: pointer;
-      transition:
-        transform var(--transition),
-        box-shadow var(--transition),
-        background var(--transition),
-        color var(--transition);
-      border: none;
-    }
+      .final-inner {
+        max-width: 720px;
+        margin: 0 auto;
+        text-align: center;
+      }
 
-    .floating-btn i {
-      font-size: 1.5rem;
-    }
+      .final-logo-wrap {
+        width: 88px;
+        height: 88px;
+        border-radius: 28px;
+        margin: 0 auto 1.1rem;
+        background: radial-gradient(circle at 30% 0, #38bdf8 0, #0f172a 55%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 20px 55px rgba(15, 23, 42, 0.7);
+      }
 
-    .floating-btn.whatsapp {
-      background: #22c55e;
-      color: #ecfdf5;
-    }
+      .final-logo-wrap img {
+        width: 70px;
+        height: 70px;
+        border-radius: 22px;
+        object-fit: contain;
+        background: #020617;
+      }
 
-    .floating-btn.whatsapp:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 20px 55px rgba(22, 163, 74, 0.8);
-    }
+      .final-title {
+        font-size: 1.6rem;
+        letter-spacing: -0.03em;
+        margin-bottom: 0.35rem;
+      }
 
-    .floating-btn.phone {
-      background: #0ea5e9;
-      color: #e0f2fe;
-    }
+      .final-sub {
+        font-size: 0.9rem;
+        color: #9ca3af;
+        max-width: 30rem;
+        margin: 0 auto 1.2rem;
+      }
 
-    .floating-btn.phone:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 20px 55px rgba(14, 165, 233, 0.8);
-    }
+      .final-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.3rem;
+        padding: 0.8rem 1.8rem;
+        border-radius: 999px;
+        border: none;
+        cursor: pointer;
+        background: linear-gradient(135deg, #22c1ff, #00b4ff);
+        color: #020617;
+        font-weight: 600;
+        font-size: 0.94rem;
+        box-shadow: 0 16px 40px rgba(56, 189, 248, 0.55);
+        margin-bottom: 2.4rem;
+        transition:
+          transform var(--transition),
+          box-shadow var(--transition);
+      }
 
-    body[dir="rtl"] .floating-contact {
-      right: auto;
-      left: 1.25rem;
-    }
+      .final-btn:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 20px 55px rgba(56, 189, 248, 0.7);
+      }
 
-    /* Booking result popup (replaces browser alert) */
-    .booking-modal {
-      position: fixed;
-      inset: 0;
-      z-index: 2000;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 1.25rem;
-    }
+      .final-footer {
+        border-top: 1px solid #020617;
+        padding: 1.8rem 0 2.1rem;
+        margin-top: 0.2rem;
+      }
 
-    .booking-modal.is-open {
-      display: flex;
-    }
+      .final-footer-grid {
+        max-width: 960px;
+        margin: 0 auto;
+        display: grid;
+        gap: 1.5rem;
+        font-size: 0.86rem;
+        color: #9ca3af;
+        text-align: left;
+      }
 
-    .booking-modal__backdrop {
-      position: absolute;
-      inset: 0;
-      background: rgba(15, 23, 42, 0.72);
-      backdrop-filter: blur(6px);
-    }
+      @media (min-width: 768px) {
+        .final-footer-grid {
+          grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1fr);
+        }
+      }
 
-    .booking-modal__panel {
-      position: relative;
-      max-width: 420px;
-      width: 100%;
-      background: #ffffff;
-      color: #0f172a;
-      border-radius: 22px;
-      padding: 1.6rem 1.5rem 1.4rem;
-      box-shadow: 0 28px 80px rgba(15, 23, 42, 0.35);
-      border: 1px solid #e5e7eb;
-      text-align: center;
-    }
+      .final-footer-logo {
+        display: flex;
+        align-items: center;
+        gap: 0.85rem;
+      }
 
-    .booking-modal__icon {
-      width: 52px;
-      height: 52px;
-      border-radius: 999px;
-      margin: 0 auto 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.75rem;
-    }
+      .final-footer-logo img {
+        width: 48px;
+        height: 48px;
+        border-radius: 14px;
+        background: #020617;
+        object-fit: contain;
+      }
 
-    .booking-modal__icon--success {
-      background: #ecfdf5;
-      color: #059669;
-    }
+      .final-footer-brand {
+        font-weight: 600;
+        color: #e5e7eb;
+        margin-bottom: 0.15rem;
+      }
 
-    .booking-modal__icon--error {
-      background: #fef2f2;
-      color: #dc2626;
-    }
+      .final-footer-text {
+        font-size: 0.82rem;
+        color: #6b7280;
+        max-width: 18rem;
+      }
 
-    .booking-modal__title {
-      font-size: 1.15rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.5rem;
-      color: #0f172a;
-    }
+      .final-footer-heading {
+        font-size: 0.86rem;
+        font-weight: 600;
+        color: #e5e7eb;
+        margin-bottom: 0.55rem;
+      }
 
-    .booking-modal__body {
-      font-size: 0.92rem;
-      color: #6b7280;
-      line-height: 1.55;
-      margin-bottom: 1.25rem;
-    }
+      .final-footer-list {
+        display: grid;
+        gap: 0.25rem;
+      }
 
-    .booking-modal__btn {
-      width: 100%;
-      border: none;
-      border-radius: 999px;
-      padding: 0.75rem 1.2rem;
-      font-size: 0.92rem;
-      font-weight: 600;
-      cursor: pointer;
-      background: linear-gradient(135deg, #05a4ff, #22c1ff);
-      color: #ffffff;
-      transition: transform 200ms ease, box-shadow 200ms ease;
-    }
+      .final-link {
+        color: #9ca3af;
+        transition: color var(--transition);
+      }
 
-    .booking-modal__btn:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 14px 36px rgba(5, 150, 255, 0.45);
-    }
-  </style>
-</head>
-<body>
-  <div class="page-shell" role="main">
-    <button class="lang-toggle" id="langToggle" type="button">
-      <i class="bx bx-globe"></i>
-      <span data-i18n="toggle.label">عربي</span>
-    </button>
-    <!-- Global floating contact buttons -->
-    <div class="floating-contact" aria-label="Quick contact options">
-      <a
-        href="https://wa.me/201103600787"
-        class="floating-btn whatsapp"
-        target="_blank"
-        rel="noopener"
-        aria-label="Contact us on WhatsApp"
-      >
-        <i class="bx bxl-whatsapp"></i>
-      </a>
-      <a
-        href="tel:201103600787"
-        class="floating-btn phone"
-        aria-label="Call the center"
-      >
-        <i class="bx bx-phone"></i>
-      </a>
-    </div>
-    <!-- SECTION 1: HERO -->
-    <section class="section hero" id="top">
-      <div class="container">
-        <div class="hero-grid">
-          <!-- LEFT SIDE: TEXT -->
-          <div>
-            <div class="hero-eyebrow">
-              <div class="hero-eyebrow-icon"><i class="bx bxs-star"></i></div>
-              <div class="hero-eyebrow-text" data-i18n="hero.eyebrow">There's Always Hope</div>
-            </div>
+      .final-link:hover {
+        color: #e5e7eb;
+      }
 
-            <h1 class="hero-heading" data-i18n="hero.headingMain">Welcome to Teriaq Oncology Center</h1>
+      .final-socials {
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 0.4rem;
+      }
 
-            <p class="hero-sub" data-i18n="hero.sub">
-              A dream that began several years ago to provide outstanding medical care for cancer patients, while working to improve the quality of scientific research in oncology.
-            </p>
-            <p class="hero-sub" data-i18n="hero.sub2">
-              Our goal is to increase the efficiency of diagnosis and treatment, as well as post-recovery care and cancer prevention.
-            </p>
+      .final-socials a {
+        width: 30px;
+        height: 30px;
+        border-radius: 999px;
+        border: 1px solid #1f2937;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #9ca3af;
+        font-size: 1.1rem;
+        transition:
+          background var(--transition),
+          color var(--transition),
+          border-color var(--transition);
+      }
 
-            <div class="hero-actions">
-              <a
-                href="#booking"
-                class="btn-primary"
-                aria-label="Book your oncology consultation now"
-              >
-                <i class="bx bx-calendar"></i>
-                <span data-i18n="hero.ctaPrimary">Book Your Consultation</span>
-              </a>
-              <a
-                href="#services"
-                class="btn-outline"
-                aria-label="View all medical services offered by the center"
-              >
-                <i class="bx bx-book"></i>
-                <span data-i18n="hero.ctaSecondary">View Services</span>
-              </a>
-            </div>
+      .final-socials a:hover {
+        background: #0f172a;
+        color: #e5e7eb;
+        border-color: #111827;
+      }
 
-            <div class="hero-meta">
-         
-              <div class="hero-meta-item">
-                <span class="hero-meta-icon"><i class="bx bx-badge-check"></i></span>
-                <span data-i18n="hero.meta2">Specialized Medical Services</span>
-              </div>
-            </div>
-          </div>
+      .final-bottom {
+        max-width: 960px;
+        margin: 1.3rem auto 0;
+        padding-top: 0.7rem;
+        border-top: 1px solid #020617;
+        font-size: 0.78rem;
+        color: #6b7280;
+        display: flex;
+        justify-content: space-between;
+        gap: 0.7rem;
+        flex-wrap: wrap;
+      }
 
-          <!-- RIGHT SIDE: LOGO CARD -->
-          <div class="hero-card-wrapper">
-            <div class="hero-card">
-              <div class="hero-logo-surface">
-                <img
-                  src="Teriaq-logo-@4x (1).png"
-                  alt="Oncology Center Logo"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+      html[dir="rtl"] .final-footer-grid {
+        text-align: right;
+      }
+
+      html[dir="rtl"] .final-bottom {
+        direction: rtl;
+        text-align: right;
+        justify-content: space-between;
+      }
+
+      /* Mobile responsiveness */
+      @media (max-width: 768px) {
+        .section {
+          padding: 2rem 1.1rem;
+        }
+
+        .hero {
+          padding-top: 2.2rem;
+          padding-bottom: 2.4rem;
+        }
+
+        .hero-eyebrow {
+          display: flex;
+          justify-content: center;
+        }
+
+        .hero-heading {
+          font-size: 1.7rem;
+        }
+
+        .hero-sub {
+          font-size: 0.9rem;
+        }
+
+        .hero-actions {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .btn-primary,
+        .btn-outline {
+          width: 100%;
+          justify-content: center;
+        }
+
+        .hero-card-wrapper {
+          justify-content: center;
+        }
+
+        .hero-card {
+          max-width: 280px;
+        }
+
+        .form-field.consulto-inline {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero-heading {
+          font-size: 1.55rem;
+        }
+
+        .hero-sub {
+          max-width: 100%;
+        }
+      }
+
+      /* Language toggle */
+      .lang-toggle {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1000;
+        border-radius: 999px;
+        border: 1px solid rgba(148, 163, 184, 0.6);
+        background: rgba(15, 23, 42, 0.9);
+        color: #e5e7eb;
+        padding: 0.4rem 0.9rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        backdrop-filter: blur(8px);
+        box-shadow: 0 14px 40px rgba(15, 23, 42, 0.6);
+      }
+
+      .lang-toggle i {
+        font-size: 1rem;
+      }
+
+      body[dir="rtl"] .lang-toggle {
+        right: auto;
+        left: 1rem;
+      }
+
+      /* Floating global contact buttons (WhatsApp + Phone) */
+      .floating-contact {
+        position: fixed;
+        right: 1.25rem;
+        bottom: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        z-index: 900;
+      }
+
+      .floating-btn {
+        width: 48px;
+        height: 48px;
+        border-radius: 999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 16px 40px rgba(15, 23, 42, 0.55);
+        cursor: pointer;
+        transition:
+          transform var(--transition),
+          box-shadow var(--transition),
+          background var(--transition),
+          color var(--transition);
+        border: none;
+      }
+
+      .floating-btn i {
+        font-size: 1.5rem;
+      }
+
+      .floating-btn.whatsapp {
+        background: #22c55e;
+        color: #ecfdf5;
+      }
+
+      .floating-btn.whatsapp:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 20px 55px rgba(22, 163, 74, 0.8);
+      }
+
+      .floating-btn.phone {
+        background: #0ea5e9;
+        color: #e0f2fe;
+      }
+
+      .floating-btn.phone:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 20px 55px rgba(14, 165, 233, 0.8);
+      }
+
+      body[dir="rtl"] .floating-contact {
+        right: auto;
+        left: 1.25rem;
+      }
+
+      /* Booking result popup (replaces browser alert) */
+      .booking-modal {
+        position: fixed;
+        inset: 0;
+        z-index: 2000;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 1.25rem;
+      }
+
+      .booking-modal.is-open {
+        display: flex;
+      }
+
+      .booking-modal__backdrop {
+        position: absolute;
+        inset: 0;
+        background: rgba(15, 23, 42, 0.72);
+        backdrop-filter: blur(6px);
+      }
+
+      .booking-modal__panel {
+        position: relative;
+        max-width: 420px;
+        width: 100%;
+        background: #ffffff;
+        color: #0f172a;
+        border-radius: 22px;
+        padding: 1.6rem 1.5rem 1.4rem;
+        box-shadow: 0 28px 80px rgba(15, 23, 42, 0.35);
+        border: 1px solid #e5e7eb;
+        text-align: center;
+      }
+
+      .booking-modal__icon {
+        width: 52px;
+        height: 52px;
+        border-radius: 999px;
+        margin: 0 auto 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.75rem;
+      }
+
+      .booking-modal__icon--success {
+        background: #ecfdf5;
+        color: #059669;
+      }
+
+      .booking-modal__icon--error {
+        background: #fef2f2;
+        color: #dc2626;
+      }
+
+      .booking-modal__title {
+        font-size: 1.15rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        margin-bottom: 0.5rem;
+        color: #0f172a;
+      }
+
+      .booking-modal__body {
+        font-size: 0.92rem;
+        color: #6b7280;
+        line-height: 1.55;
+        margin-bottom: 1.25rem;
+      }
+
+      .booking-modal__btn {
+        width: 100%;
+        border: none;
+        border-radius: 999px;
+        padding: 0.75rem 1.2rem;
+        font-size: 0.92rem;
+        font-weight: 600;
+        cursor: pointer;
+        background: linear-gradient(135deg, #05a4ff, #22c1ff);
+        color: #ffffff;
+        transition:
+          transform 200ms ease,
+          box-shadow 200ms ease;
+      }
+
+      .booking-modal__btn:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 14px 36px rgba(5, 150, 255, 0.45);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-shell" role="main">
+      <button class="lang-toggle" id="langToggle" type="button">
+        <i class="bx bx-globe"></i>
+        <span data-i18n="toggle.label">عربي</span>
+      </button>
+      <!-- Global floating contact buttons -->
+      <div class="floating-contact" aria-label="Quick contact options">
+        <a
+          href="https://wa.me/201103600787"
+          class="floating-btn whatsapp"
+          target="_blank"
+          rel="noopener"
+          aria-label="Contact us on WhatsApp"
+        >
+          <i class="bx bxl-whatsapp"></i>
+        </a>
+        <a
+          href="tel:201103600787"
+          class="floating-btn phone"
+          aria-label="Call the center"
+        >
+          <i class="bx bx-phone"></i>
+        </a>
       </div>
-    </section>
-
-    <!-- SECTION 2: ABOUT -->
-    <section class="section about-section" id="about">
-      <div class="container">
-        <div class="about-inner">
-          <div class="about-kicker" data-i18n="about.kicker">Who We Are</div>
-          <h2 class="about-title" data-i18n="about.title">Teriaq Oncology Center</h2>
-          <p class="about-sub" data-i18n="about.sub">
-            Teriaq Oncology Center offers integrated oncology services designed to guide and support patients at every stage of care. Supported by a network of experienced oncology physicians from across Egypt and leading medical schools, our team brings together diverse expertise to deliver coordinated, high-quality cancer care tailored to each patient's individual needs.
-          </p>
-        </div>
-
-        <h3 class="about-approach-title" data-i18n="about.approachTitle">Our Approach to Care</h3>
-        <div class="about-cards">
-          <article class="about-card">
-            <div class="about-icon"><i class="bx bx-heart"></i></div>
-            <h3 class="about-card-title" data-i18n="about.card1.title">Patient-Centered Care</h3>
-            <p class="about-card-text" data-i18n="about.card1.text">
-              Every patient is unique. That's why we develop individualized treatment plans that consider each patient's medical condition, personal needs, and overall well-being.
-            </p>
-          </article>
-
-          <article class="about-card">
-            <div class="about-icon"><i class="bx bx-check-shield"></i></div>
-            <h3 class="about-card-title" data-i18n="about.card2.title">Evidence-Based Medicine</h3>
-            <p class="about-card-text" data-i18n="about.card2.text">
-              Our treatments follow the latest international oncology guidelines and medical research to ensure patients receive the highest standard of care and the best possible outcomes.
-            </p>
-          </article>
-
-          <article class="about-card">
-            <div class="about-icon"><i class="bx bx-group"></i></div>
-            <h3 class="about-card-title" data-i18n="about.card3.title">Multidisciplinary Expertise</h3>
-            <p class="about-card-text" data-i18n="about.card3.text">
-              We are proud to introduce Egypt's first oncology Consulto program, a collaborative platform where physicians from multiple oncology disciplines work together to provide comprehensive evaluation and personalized treatment planning.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 3: SERVICES -->
-    <section class="section services-section" id="services">
-      <div class="container">
-        <div class="services-inner">
-          <div class="services-kicker" data-i18n="services.kicker">Our Services</div>
-          <h2 class="services-title" data-i18n="services.title">At Teriaq Oncology Center</h2>
-          <p class="services-sub" data-i18n="services.sub">
-            We provide comprehensive oncology services designed to support patients through every stage of their care.
-          </p>
-        </div>
-
-        <div class="services-grid">
-          <article class="service-card">
-            <div class="service-icon"><i class="bx bx-dna"></i></div>
-            <h3 class="service-title" data-i18n="services.card1.title">Chemotherapy</h3>
-            <p class="service-text" data-i18n="services.card1.text">Modern chemotherapy protocols delivered in a safe, supportive setting.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon"><i class="bx bx-radiation"></i></div>
-            <h3 class="service-title" data-i18n="services.card2.title">Radiotherapy</h3>
-            <p class="service-text" data-i18n="services.card2.text">Precision radiation therapy for targeted cancer treatment.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon"><i class="bx bx-scan"></i></div>
-            <h3 class="service-title" data-i18n="services.card3.title">Radiation Treatment Using Advanced Imaging</h3>
-            <p class="service-text" data-i18n="services.card3.text">Image-guided radiation for accuracy and better outcomes.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon"><i class="bx bx-heart-circle"></i></div>
-            <h3 class="service-title" data-i18n="services.card4.title">Bone Marrow Transplant</h3>
-            <p class="service-text" data-i18n="services.card4.text">Specialized hemato-oncology and BMT care.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon"><i class="bx bx-plus-medical"></i></div>
-            <h3 class="service-title" data-i18n="services.card5.title">Pain Management</h3>
-            <p class="service-text" data-i18n="services.card5.text">Expert support to manage pain and improve quality of life.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon"><i class="bx bx-brain"></i></div>
-            <h3 class="service-title" data-i18n="services.card6.title">Psychological (Mental Health) Support</h3>
-            <p class="service-text" data-i18n="services.card6.text">Counseling and mental health support for patients and families.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon"><i class="bx bx-bowl-hot"></i></div>
-            <h3 class="service-title" data-i18n="services.card7.title">Nutrition Clinic</h3>
-            <p class="service-text" data-i18n="services.card7.text">Tailored nutritional guidance during and after treatment.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon"><i class="bx bx-search-alt"></i></div>
-            <h3 class="service-title" data-i18n="services.card8.title">Early Detection and Genetic Counseling</h3>
-            <p class="service-text" data-i18n="services.card8.text">Screening and genetic counseling for at-risk individuals.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon"><i class="bx bx-capsule"></i></div>
-            <h3 class="service-title" data-i18n="services.card9.title">Pharmaceutical Services</h3>
-            <p class="service-text" data-i18n="services.card9.text">Oncology pharmacy and medication management.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon"><i class="bx bx-run"></i></div>
-            <h3 class="service-title" data-i18n="services.card10.title">Recovery Program</h3>
-            <p class="service-text" data-i18n="services.card10.text">Rehabilitation and recovery support after treatment.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon"><i class="bx bx-group"></i></div>
-            <h3 class="service-title" data-i18n="services.card11.title">Consulto (Multidisciplinary Consultation)</h3>
-            <p class="service-text" data-i18n="services.card11.text">Egypt's first oncology Consulto: multiple specialists, one coordinated plan.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon"><i class="bx bx-home-heart"></i></div>
-            <h3 class="service-title" data-i18n="services.card12.title">Home care</h3>
-            <p class="service-text" data-i18n="services.card12.text">Professional nursing and supportive oncology care delivered in the comfort of your home.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 4: WHY PATIENTS TRUST US -->
-    <section class="section trust-section" id="trust">
-      <div class="container">
-        <div class="trust-inner">
-          <div class="trust-kicker" data-i18n="trust.kicker">Why Patients Trust Us</div>
-          <h2 class="trust-title" data-i18n="trust.title">Why Patients Trust Us</h2>
-          <p class="trust-sub" data-i18n="trust.sub">
-            Patients choose Oncology Center for experienced specialists, clear explanations, and
-            confidential, compassionate care at every step of the journey.
-          </p>
-        </div>
-
-        <div class="trust-grid">
-          <div class="trust-card">
-            <div class="trust-icon"><i class="bx bxs-badge-check"></i></div>
-            <div data-i18n="trust.card1">Experienced Doctors</div>
-          </div>
-          <div class="trust-card">
-            <div class="trust-icon"><i class="bx bxs-flask"></i></div>
-            <div data-i18n="trust.card2">Evidence-Based Treatment</div>
-          </div>
-          <div class="trust-card">
-            <div class="trust-icon"><i class="bx bxs-user-check"></i></div>
-            <div data-i18n="trust.card3">Personalized Care</div>
-          </div>
-          <div class="trust-card">
-            <div class="trust-icon"><i class="bx bxs-lock-alt"></i></div>
-            <div data-i18n="trust.card4">Confidential Medical Consultation</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 5: DOCTOR CARD -->
-    <section class="section doctor-section" id="doctor">
-      <div class="container">
-        <div class="doctor-inner">
-          <div class="doctor-header">
-            <div class="doctor-kicker" data-i18n="doctor.kicker">Leadership</div>
-            <h2 class="doctor-title" data-i18n="doctor.title">Dr. Mohamed El Shazly</h2>
-            <p class="doctor-sub" data-i18n="doctor.sub">
-              Facing cancer can feel overwhelming for patients and their families. At Teriaq Oncology Center, we are here to guide you with expertise, compassion, and clarity.
-            </p>
-          </div>
-
-          <div class="doctor-card">
+      <!-- SECTION 1: HERO -->
+      <section class="section hero" id="top">
+        <div class="container">
+          <div class="hero-grid">
+            <!-- LEFT SIDE: TEXT -->
             <div>
-              <div class="doctor-info-title" data-i18n="doctor.infoTitle">Leadership</div>
-              <div class="doctor-name" data-i18n="doctor.name">Dr. Mohamed El Shazly</div>
-              <div class="doctor-role" data-i18n="doctor.role">
-                Oncology and Bone Marrow Transplantation Consultant
+              <div class="hero-eyebrow">
+                <div class="hero-eyebrow-icon"><i class="bx bxs-star"></i></div>
+                <div class="hero-eyebrow-text" data-i18n="hero.eyebrow">
+                  There's Always Hope
+                </div>
               </div>
-              <div class="doctor-badges">
-                <span class="doctor-badge">
-                  <i class="bx bxs-graduation"></i>
-                  <span data-i18n="doctor.badge1">Lecturer of Oncology – Alexandria University</span>
-                </span>
-                <span class="doctor-badge">
-                  <i class="bx bx-world"></i>
-                  <span data-i18n="doctor.badge2">Fellow, MD Anderson Cancer Center – Texas, USA</span>
-                </span>
-                <span class="doctor-badge">
-                  <i class="bx bx-world"></i>
-                  <span data-i18n="doctor.badge3">Fellow, Dana-Farber Cancer Institute – Harvard University, USA</span>
-                </span>
+
+              <h1 class="hero-heading" data-i18n="hero.headingMain">
+                Welcome to Teriaq Oncology Center
+              </h1>
+
+              <p class="hero-sub" data-i18n="hero.sub">
+                A dream that began several years ago to provide outstanding
+                medical care for cancer patients, while working to improve the
+                quality of scientific research in oncology.
+              </p>
+              <p class="hero-sub" data-i18n="hero.sub2">
+                Our goal is to increase the efficiency of diagnosis and
+                treatment, as well as post-recovery care and cancer prevention.
+              </p>
+
+              <div class="hero-actions">
+                <a
+                  href="#booking"
+                  class="btn-primary"
+                  aria-label="Book your oncology consultation now"
+                >
+                  <i class="bx bx-calendar"></i>
+                  <span data-i18n="hero.ctaPrimary"
+                    >Book Your Consultation</span
+                  >
+                </a>
+                <a
+                  href="#services"
+                  class="btn-outline"
+                  aria-label="View all medical services offered by the center"
+                >
+                  <i class="bx bx-book"></i>
+                  <span data-i18n="hero.ctaSecondary">View Services</span>
+                </a>
               </div>
-              <p class="doctor-text" data-i18n="doctor.text">
-                MBBCh, M.Sc, MD. Consultant of Clinical Oncology. Hemato-Oncology & Bone Marrow Transplantation. Lecturer of Clinical Oncology, Alexandria Faculty of Medicine. Fellow of MD Anderson Cancer Center, Texas, USA. Fellow of Dana-Farber Cancer Institute, Harvard University, USA.
+
+              <div class="hero-meta">
+                <div class="hero-meta-item">
+                  <span class="hero-meta-icon"
+                    ><i class="bx bx-badge-check"></i
+                  ></span>
+                  <span data-i18n="hero.meta2"
+                    >Specialized Medical Services</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT SIDE: LOGO CARD -->
+            <div class="hero-card-wrapper">
+              <div class="hero-card">
+                <div class="hero-logo-surface">
+                  <img
+                    src="Teriaq-logo-@4x (1).png"
+                    alt="Oncology Center Logo"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: ABOUT -->
+      <section class="section about-section" id="about">
+        <div class="container">
+          <div class="about-inner">
+            <div class="about-kicker" data-i18n="about.kicker">Who We Are</div>
+            <h2 class="about-title" data-i18n="about.title">
+              Teriaq Oncology Center
+            </h2>
+            <p class="about-sub" data-i18n="about.sub">
+              Teriaq Oncology Center offers integrated oncology services
+              designed to guide and support patients at every stage of care.
+              Supported by a network of experienced oncology physicians from
+              across Egypt and leading medical schools, our team brings together
+              diverse expertise to deliver coordinated, high-quality cancer care
+              tailored to each patient's individual needs.
+            </p>
+          </div>
+
+          <h3 class="about-approach-title" data-i18n="about.approachTitle">
+            Our Approach to Care
+          </h3>
+          <div class="about-cards">
+            <article class="about-card">
+              <div class="about-icon"><i class="bx bx-heart"></i></div>
+              <h3 class="about-card-title" data-i18n="about.card1.title">
+                Patient-Centered Care
+              </h3>
+              <p class="about-card-text" data-i18n="about.card1.text">
+                Every patient is unique. That's why we develop individualized
+                treatment plans that consider each patient's medical condition,
+                personal needs, and overall well-being.
+              </p>
+            </article>
+
+            <article class="about-card">
+              <div class="about-icon"><i class="bx bx-check-shield"></i></div>
+              <h3 class="about-card-title" data-i18n="about.card2.title">
+                Evidence-Based Medicine
+              </h3>
+              <p class="about-card-text" data-i18n="about.card2.text">
+                Our treatments follow the latest international oncology
+                guidelines and medical research to ensure patients receive the
+                highest standard of care and the best possible outcomes.
+              </p>
+            </article>
+
+            <article class="about-card">
+              <div class="about-icon"><i class="bx bx-group"></i></div>
+              <h3 class="about-card-title" data-i18n="about.card3.title">
+                Multidisciplinary Expertise
+              </h3>
+              <p class="about-card-text" data-i18n="about.card3.text">
+                We are proud to introduce Egypt's first oncology Consulto
+                program, a collaborative platform where physicians from multiple
+                oncology disciplines work together to provide comprehensive
+                evaluation and personalized treatment planning.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: SERVICES -->
+      <section class="section services-section" id="services">
+        <div class="container">
+          <div class="services-inner">
+            <div class="services-kicker" data-i18n="services.kicker">
+              Our Services
+            </div>
+            <h2 class="services-title" data-i18n="services.title">
+              At Teriaq Oncology Center
+            </h2>
+            <p class="services-sub" data-i18n="services.sub">
+              We provide comprehensive oncology services designed to support
+              patients through every stage of their care.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="service-icon"><i class="bx bx-dna"></i></div>
+              <h3 class="service-title" data-i18n="services.card1.title">
+                Chemotherapy
+              </h3>
+              <p class="service-text" data-i18n="services.card1.text">
+                Modern chemotherapy protocols delivered in a safe, supportive
+                setting.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon"><i class="bx bx-radiation"></i></div>
+              <h3 class="service-title" data-i18n="services.card2.title">
+                Radiotherapy
+              </h3>
+              <p class="service-text" data-i18n="services.card2.text">
+                Precision radiation therapy for targeted cancer treatment.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon"><i class="bx bx-scan"></i></div>
+              <h3 class="service-title" data-i18n="services.card3.title">
+                Radiation Treatment Using Advanced Imaging
+              </h3>
+              <p class="service-text" data-i18n="services.card3.text">
+                Image-guided radiation for accuracy and better outcomes.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon"><i class="bx bx-heart-circle"></i></div>
+              <h3 class="service-title" data-i18n="services.card4.title">
+                Bone Marrow Transplant
+              </h3>
+              <p class="service-text" data-i18n="services.card4.text">
+                Specialized hemato-oncology and BMT care.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon"><i class="bx bx-plus-medical"></i></div>
+              <h3 class="service-title" data-i18n="services.card5.title">
+                Pain Management
+              </h3>
+              <p class="service-text" data-i18n="services.card5.text">
+                Expert support to manage pain and improve quality of life.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon"><i class="bx bx-brain"></i></div>
+              <h3 class="service-title" data-i18n="services.card6.title">
+                Psychological (Mental Health) Support
+              </h3>
+              <p class="service-text" data-i18n="services.card6.text">
+                Counseling and mental health support for patients and families.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon"><i class="bx bx-bowl-hot"></i></div>
+              <h3 class="service-title" data-i18n="services.card7.title">
+                Nutrition Clinic
+              </h3>
+              <p class="service-text" data-i18n="services.card7.text">
+                Tailored nutritional guidance during and after treatment.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon"><i class="bx bx-search-alt"></i></div>
+              <h3 class="service-title" data-i18n="services.card8.title">
+                Early Detection and Genetic Counseling
+              </h3>
+              <p class="service-text" data-i18n="services.card8.text">
+                Screening and genetic counseling for at-risk individuals.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon"><i class="bx bx-capsule"></i></div>
+              <h3 class="service-title" data-i18n="services.card9.title">
+                Pharmaceutical Services
+              </h3>
+              <p class="service-text" data-i18n="services.card9.text">
+                Oncology pharmacy and medication management.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon"><i class="bx bx-run"></i></div>
+              <h3 class="service-title" data-i18n="services.card10.title">
+                Recovery Program
+              </h3>
+              <p class="service-text" data-i18n="services.card10.text">
+                Rehabilitation and recovery support after treatment.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon"><i class="bx bx-group"></i></div>
+              <h3 class="service-title" data-i18n="services.card11.title">
+                Consulto (Multidisciplinary Consultation)
+              </h3>
+              <p class="service-text" data-i18n="services.card11.text">
+                Egypt's first oncology Consulto: multiple specialists, one
+                coordinated plan.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon"><i class="bx bx-home-heart"></i></div>
+              <h3 class="service-title" data-i18n="services.card12.title">
+                Home care
+              </h3>
+              <p class="service-text" data-i18n="services.card12.text">
+                Professional nursing and supportive oncology care delivered in
+                the comfort of your home.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: WHY PATIENTS TRUST US -->
+      <section class="section trust-section" id="trust">
+        <div class="container">
+          <div class="trust-inner">
+            <div class="trust-kicker" data-i18n="trust.kicker">
+              Why Patients Trust Us
+            </div>
+            <h2 class="trust-title" data-i18n="trust.title">
+              Why Patients Trust Us
+            </h2>
+            <p class="trust-sub" data-i18n="trust.sub">
+              Patients choose Oncology Center for experienced specialists, clear
+              explanations, and confidential, compassionate care at every step
+              of the journey.
+            </p>
+          </div>
+
+          <div class="trust-grid">
+            <div class="trust-card">
+              <div class="trust-icon"><i class="bx bxs-badge-check"></i></div>
+              <div data-i18n="trust.card1">Experienced Doctors</div>
+            </div>
+            <div class="trust-card">
+              <div class="trust-icon"><i class="bx bxs-flask"></i></div>
+              <div data-i18n="trust.card2">Evidence-Based Treatment</div>
+            </div>
+            <div class="trust-card">
+              <div class="trust-icon"><i class="bx bxs-user-check"></i></div>
+              <div data-i18n="trust.card3">Personalized Care</div>
+            </div>
+            <div class="trust-card">
+              <div class="trust-icon"><i class="bx bxs-lock-alt"></i></div>
+              <div data-i18n="trust.card4">
+                Confidential Medical Consultation
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: DOCTOR CARD -->
+      <section class="section doctor-section" id="doctor">
+        <div class="container">
+          <div class="doctor-inner">
+            <div class="doctor-header">
+              <div class="doctor-kicker" data-i18n="doctor.kicker">
+                Leadership
+              </div>
+              <h2 class="doctor-title" data-i18n="doctor.title">
+                Dr. Mohamed El Shazly
+              </h2>
+              <p class="doctor-sub" data-i18n="doctor.sub">
+                Facing cancer can feel overwhelming for patients and their
+                families. At Teriaq Oncology Center, we are here to guide you
+                with expertise, compassion, and clarity.
               </p>
             </div>
-            <div class="doctor-photo-card">
-              <img
-                src="thumb.jpg"
-                alt="Dr. Ahmed El Halfawy"
-              />
+
+            <div class="doctor-card">
+              <div>
+                <div class="doctor-info-title" data-i18n="doctor.infoTitle">
+                  Leadership
+                </div>
+                <div class="doctor-name" data-i18n="doctor.name">
+                  Dr. Mohamed El Shazly
+                </div>
+                <div class="doctor-role" data-i18n="doctor.role">
+                  Oncology and Bone Marrow Transplantation Consultant
+                </div>
+                <div class="doctor-badges">
+                  <span class="doctor-badge">
+                    <i class="bx bxs-graduation"></i>
+                    <span data-i18n="doctor.badge1"
+                      >Lecturer of Oncology – Alexandria University</span
+                    >
+                  </span>
+                  <span class="doctor-badge">
+                    <i class="bx bx-world"></i>
+                    <span data-i18n="doctor.badge2"
+                      >Fellow, MD Anderson Cancer Center – Texas, USA</span
+                    >
+                  </span>
+                  <span class="doctor-badge">
+                    <i class="bx bx-world"></i>
+                    <span data-i18n="doctor.badge3"
+                      >Fellow, Dana-Farber Cancer Institute – Harvard
+                      University, USA</span
+                    >
+                  </span>
+                </div>
+                <p class="doctor-text" data-i18n="doctor.text">
+                  MBBCh, M.Sc, MD. Consultant of Clinical Oncology.
+                  Hemato-Oncology & Bone Marrow Transplantation. Lecturer of
+                  Clinical Oncology, Alexandria Faculty of Medicine. Fellow of
+                  MD Anderson Cancer Center, Texas, USA. Fellow of Dana-Farber
+                  Cancer Institute, Harvard University, USA.
+                </p>
+              </div>
+              <div class="doctor-photo-card">
+                <img src="thumb.jpg" alt="Dr. Ahmed El Halfawy" />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- SECTION 6: CLINIC GALLERY -->
-    <section class="section gallery-section" id="gallery">
-      <div class="container">
-        <div class="gallery-inner">
-          <div class="gallery-header">
-            <div class="gallery-kicker" data-i18n="gallery.kicker">Clinic View</div>
-            <h2 class="gallery-title" data-i18n="gallery.title">Inside Teriq Oncology Center</h2>
-            <p class="gallery-sub" data-i18n="gallery.sub">
-              A calm, modern clinical environment designed to keep you comfortable from the waiting
-              area to the consultation rooms.
-            </p>
-          </div>
+      <!-- SECTION 6: CLINIC GALLERY -->
+      <section class="section gallery-section" id="gallery">
+        <div class="container">
+          <div class="gallery-inner">
+            <div class="gallery-header">
+              <div class="gallery-kicker" data-i18n="gallery.kicker">
+                Clinic View
+              </div>
+              <h2 class="gallery-title" data-i18n="gallery.title">
+                Inside Teriq Oncology Center
+              </h2>
+              <p class="gallery-sub" data-i18n="gallery.sub">
+                A calm, modern clinical environment designed to keep you
+                comfortable from the waiting area to the consultation rooms.
+              </p>
+            </div>
 
-          <div class="gallery-grid">
-            <figure class="gallery-item">
-              <img src="DSC00402.jpg" alt="Clinic interior view" />
-              <figcaption class="gallery-caption">
-                <i class="bx bx-clinic"></i>
-              <span data-i18n="gallery.caption1">Reception & waiting area</span>
-              </figcaption>
-            </figure>
-            <figure class="gallery-item">
-              <img src="DSC00344.jpg" alt="Clinic interior view" />
-              <figcaption class="gallery-caption">
-                <i class="bx bx-clinic"></i>
-              <span data-i18n="gallery.caption2">Reception & waiting area</span>
-              </figcaption>
-            </figure>
-            <figure class="gallery-item">
-              <img src="DSC00313.jpg" alt="Clinic interior view" />
-              <figcaption class="gallery-caption">
-                <i class="bx bx-clinic"></i>
-              <span data-i18n="gallery.caption3">Reception & waiting area</span>
-              </figcaption>
-            </figure>
-            <figure class="gallery-item">
-              <img src="111.jpg" alt="Clinic interior view" />
-              <figcaption class="gallery-caption">
-                <i class="bx bx-clinic"></i>
-              <span data-i18n="gallery.caption4">Reception & waiting area</span>
-              </figcaption>
-            </figure>
+            <div class="gallery-grid">
+              <figure class="gallery-item">
+                <img src="DSC00402.jpg" alt="Clinic interior view" />
+                <figcaption class="gallery-caption">
+                  <i class="bx bx-clinic"></i>
+                  <span data-i18n="gallery.caption1"
+                    >Reception & waiting area</span
+                  >
+                </figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img src="DSC00344.jpg" alt="Clinic interior view" />
+                <figcaption class="gallery-caption">
+                  <i class="bx bx-clinic"></i>
+                  <span data-i18n="gallery.caption2"
+                    >Reception & waiting area</span
+                  >
+                </figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img src="DSC00313.jpg" alt="Clinic interior view" />
+                <figcaption class="gallery-caption">
+                  <i class="bx bx-clinic"></i>
+                  <span data-i18n="gallery.caption3"
+                    >Reception & waiting area</span
+                  >
+                </figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img src="111.jpg" alt="Clinic interior view" />
+                <figcaption class="gallery-caption">
+                  <i class="bx bx-clinic"></i>
+                  <span data-i18n="gallery.caption4"
+                    >Reception & waiting area</span
+                  >
+                </figcaption>
+              </figure>
 
-            <!-- Duplicate or add more items here when you have more photos -->
+              <!-- Duplicate or add more items here when you have more photos -->
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- SECTION 7: BOOKING -->
-    <section class="section booking-section" id="booking">
-      <div class="container">
-        <div class="booking-inner">
-          <div class="booking-header">
-            <div class="booking-kicker" data-i18n="booking.kicker">Appointments</div>
-            <h2 class="booking-title" data-i18n="booking.title">Request an Appointment</h2>
-            <p class="booking-sub" data-i18n="booking.sub">
-              Fill in your details and we'll get back to you within a short time to confirm your
-              appointment and answer any questions.
-            </p>
-          </div>
-
-          <div class="booking-card">
-            <form id="bookingForm" novalidate>
-              <div class="booking-card-header">
-                <div>
-                  <div class="booking-card-title" data-i18n="booking.cardTitle">Appointment details</div>
-                  <div class="booking-card-sub" data-i18n="booking.cardSub">Share your basic information and preferred service.</div>
-                </div>
-                <div class="booking-chip">
-                  <i class="bx bx-time-five"></i>
-                  <span data-i18n="booking.chip">1–2 min to complete</span>
-                </div>
+      <!-- SECTION 7: BOOKING -->
+      <section class="section booking-section" id="booking">
+        <div class="container">
+          <div class="booking-inner">
+            <div class="booking-header">
+              <div class="booking-kicker" data-i18n="booking.kicker">
+                Appointments
               </div>
+              <h2 class="booking-title" data-i18n="booking.title">
+                Request an Appointment
+              </h2>
+              <p class="booking-sub" data-i18n="booking.sub">
+                Fill in your details and we'll get back to you within a short
+                time to confirm your appointment and answer any questions.
+              </p>
+            </div>
 
-              <div class="form-grid form-grid-2">
-                <div class="form-field">
-                  <label class="form-label" for="patientName" data-i18n="booking.patientNameLabel">Patient Name</label>
-                  <input
-                    id="patientName"
-                    name="patientName"
-                    class="form-input"
-                    type="text"
-                    data-i18n-placeholder="booking.patientNamePlaceholder"
-                    placeholder="Enter your full name"
-                    required
-                  />
+            <div class="booking-card">
+              <form id="bookingForm" novalidate>
+                <div class="booking-card-header">
+                  <div>
+                    <div
+                      class="booking-card-title"
+                      data-i18n="booking.cardTitle"
+                    >
+                      Appointment details
+                    </div>
+                    <div class="booking-card-sub" data-i18n="booking.cardSub">
+                      Share your basic information and preferred service.
+                    </div>
+                  </div>
+                  <div class="booking-chip">
+                    <i class="bx bx-time-five"></i>
+                    <span data-i18n="booking.chip">1–2 min to complete</span>
+                  </div>
                 </div>
-                <div class="form-field">
-                  <label class="form-label" for="phone" data-i18n="booking.phoneLabel">Phone Number</label>
-                  <input
-                    id="phone"
-                    name="phone"
-                    class="form-input"
-                    type="tel"
-                    inputmode="tel"
-                    data-i18n-placeholder="booking.phonePlaceholder"
-                    placeholder="Enter your phone number"
-                    required
-                  />
-                </div>
-              </div>
 
-              <div class="form-grid" style="margin-top: 0.9rem;">
-                <div class="form-field">
-                  <label class="form-label" for="serviceType" data-i18n="booking.serviceTypeLabel">Service Type</label>
-                  <div class="form-select-wrapper">
-                    <select
-                      id="serviceType"
-                      name="serviceType"
-                      class="form-select"
+                <div class="form-grid form-grid-2">
+                  <div class="form-field">
+                    <label
+                      class="form-label"
+                      for="patientName"
+                      data-i18n="booking.patientNameLabel"
+                      >Patient Name</label
+                    >
+                    <input
+                      id="patientName"
+                      name="patientName"
+                      class="form-input"
+                      type="text"
+                      data-i18n-placeholder="booking.patientNamePlaceholder"
+                      placeholder="Enter your full name"
                       required
+                    />
+                  </div>
+                  <div class="form-field">
+                    <label
+                      class="form-label"
+                      for="phone"
+                      data-i18n="booking.phoneLabel"
+                      >Phone Number</label
                     >
-                      <option value="" data-i18n="booking.servicePlaceholder">Select a service</option>
-                      <option value="Oncology Examination" data-i18n="booking.service1">Oncology Examination</option>
-                      <option value="Physical Therapy" data-i18n="booking.service2">Physical Therapy</option>
-                      <option value="Nutrition Consultation" data-i18n="booking.service3">Nutrition Consultation</option>
-                      <option value="Online Consultation" data-i18n="booking.service4">Online Consultation</option>
-                      <option value="ConsulTO" data-i18n="booking.service5">ConsulTO</option>
-                      <option value="Home care" data-i18n="booking.service6">Home care</option>
-                    </select>
+                    <input
+                      id="phone"
+                      name="phone"
+                      class="form-input"
+                      type="tel"
+                      inputmode="tel"
+                      data-i18n-placeholder="booking.phonePlaceholder"
+                      placeholder="Enter your phone number"
+                      required
+                    />
                   </div>
                 </div>
-              </div>
 
-              <div class="form-grid consulto-group" id="consultoGroup" style="margin-top: 0.9rem;">
-                <div class="form-field consulto-inline">
-                  <label class="form-label" for="consultoSpecialty" data-i18n="booking.consultoLabel">ConsulTO Specialty</label>
-                  <div class="form-select-wrapper">
-                    <select
-                      id="consultoSpecialty"
-                      name="consultoSpecialty"
-                      class="form-select"
+                <div class="form-grid" style="margin-top: 0.9rem">
+                  <div class="form-field">
+                    <label
+                      class="form-label"
+                      for="serviceType"
+                      data-i18n="booking.serviceTypeLabel"
+                      >Service Type</label
                     >
-                      <option value="" data-i18n="booking.consultoPlaceholder">Select a specialty</option>
-                      <option value="Gynecologic Oncology" data-i18n="booking.consulto1">Gynecologic Oncology</option>
-                      <option value="Surgical Oncology" data-i18n="booking.consulto2">Surgical Oncology</option>
-                      <option value="Medical Oncology" data-i18n="booking.consulto3">Medical Oncology</option>
-                      <option value="Radiology Consultation" data-i18n="booking.consulto4">Radiology Consultation</option>
-                      <option value="Pathology Consultation" data-i18n="booking.consulto5">Pathology Consultation</option>
-                    </select>
+                    <div class="form-select-wrapper">
+                      <select
+                        id="serviceType"
+                        name="serviceType"
+                        class="form-select"
+                        required
+                      >
+                        <option value="" data-i18n="booking.servicePlaceholder">
+                          Select a service
+                        </option>
+                        <option
+                          value="Oncology Examination"
+                          data-i18n="booking.service1"
+                        >
+                          Oncology Examination
+                        </option>
+                        <option
+                          value="Physical Therapy"
+                          data-i18n="booking.service2"
+                        >
+                          Physical Therapy
+                        </option>
+                        <option
+                          value="Nutrition Consultation"
+                          data-i18n="booking.service3"
+                        >
+                          Nutrition Consultation
+                        </option>
+                        <option
+                          value="Online Consultation"
+                          data-i18n="booking.service4"
+                        >
+                          Online Consultation
+                        </option>
+                        <option value="ConsulTO" data-i18n="booking.service5">
+                          ConsulTO
+                        </option>
+                        <option value="Home care" data-i18n="booking.service6">
+                          Home care
+                        </option>
+                      </select>
+                    </div>
                   </div>
-                  <p class="form-helper" data-i18n="booking.consultoHelper">
-                    Choose the sub‑specialty that best matches your case for a more focused opinion.
+                </div>
+
+                <div
+                  class="form-grid consulto-group"
+                  id="consultoGroup"
+                  style="margin-top: 0.9rem"
+                >
+                  <div class="form-field consulto-inline">
+                    <label
+                      class="form-label"
+                      for="consultoSpecialty"
+                      data-i18n="booking.consultoLabel"
+                      >ConsulTO Specialty</label
+                    >
+                    <div class="form-select-wrapper">
+                      <select
+                        id="consultoSpecialty"
+                        name="consultoSpecialty"
+                        class="form-select"
+                      >
+                        <option
+                          value=""
+                          data-i18n="booking.consultoPlaceholder"
+                        >
+                          Select a specialty
+                        </option>
+                        <option
+                          value="Gynecologic Oncology"
+                          data-i18n="booking.consulto1"
+                        >
+                          Gynecologic Oncology
+                        </option>
+                        <option
+                          value="Surgical Oncology"
+                          data-i18n="booking.consulto2"
+                        >
+                          Surgical Oncology
+                        </option>
+                        <option
+                          value="Medical Oncology"
+                          data-i18n="booking.consulto3"
+                        >
+                          Medical Oncology
+                        </option>
+                        <option
+                          value="Radiology Consultation"
+                          data-i18n="booking.consulto4"
+                        >
+                          Radiology Consultation
+                        </option>
+                        <option
+                          value="Pathology Consultation"
+                          data-i18n="booking.consulto5"
+                        >
+                          Pathology Consultation
+                        </option>
+                      </select>
+                    </div>
+                    <p class="form-helper" data-i18n="booking.consultoHelper">
+                      Choose the sub‑specialty that best matches your case for a
+                      more focused opinion.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="booking-submit">
+                  <button
+                    type="submit"
+                    class="btn-booking-primary"
+                    id="bookingSubmit"
+                  >
+                    <i class="bx bx-calendar"></i>
+                    <span data-i18n="booking.submit">Request Appointment</span>
+                  </button>
+                  <p class="booking-note" data-i18n="booking.note">
+                    Your information is kept confidential and used only to
+                    contact you regarding your appointment.
+                  </p>
+                </div>
+              </form>
+            </div>
+
+            <div class="booking-side" style="margin-top: 1.5rem">
+              <div class="booking-side-card">
+                <div class="booking-side-icon">
+                  <i class="bx bxs-time-five"></i>
+                </div>
+                <div>
+                  <div
+                    class="booking-side-title"
+                    data-i18n="booking.side1.title"
+                  >
+                    Fast response
+                  </div>
+                  <p class="booking-side-text" data-i18n="booking.side1.text">
+                    Most appointment requests are answered within 1–2 working
+                    hours.
                   </p>
                 </div>
               </div>
 
-              <div class="booking-submit">
-                <button type="submit" class="btn-booking-primary" id="bookingSubmit">
-                  <i class="bx bx-calendar"></i>
-                  <span data-i18n="booking.submit">Request Appointment</span>
-                </button>
-                <p class="booking-note" data-i18n="booking.note">
-                  Your information is kept confidential and used only to contact you regarding your
-                  appointment.
-                </p>
-              </div>
-            </form>
-          </div>
-
-          <div class="booking-side" style="margin-top: 1.5rem;">
-            <div class="booking-side-card">
-              <div class="booking-side-icon"><i class="bx bxs-time-five"></i></div>
-              <div>
-                <div class="booking-side-title" data-i18n="booking.side1.title">Fast response</div>
-                <p class="booking-side-text" data-i18n="booking.side1.text">
-                  Most appointment requests are answered within 1–2 working hours.
-                </p>
-              </div>
-            </div>
-
-            <div class="booking-side-card">
-              <div class="booking-side-icon"><i class="bx bxs-user-check"></i></div>
-              <div>
-                <div class="booking-side-title" data-i18n="booking.side2.title">Reviewed by a doctor</div>
-                <p class="booking-side-text" data-i18n="booking.side2.text">
-                  Your request is reviewed directly by a medical team member, not a bot.
-                </p>
-              </div>
-            </div>
-
-            <div class="booking-side-card">
-              <div class="booking-side-icon"><i class="bx bxs-lock-alt"></i></div>
-              <div>
-                <div class="booking-side-title" data-i18n="booking.side3.title">Confidential & secure</div>
-                <p class="booking-side-text" data-i18n="booking.side3.text">
-                  We keep your details private and use them only to arrange your consultation.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 7: FINAL CTA + FOOTER -->
-    <section class="final-section section " id="cta">
-      <div class="container">
-        <div class="final-inner">
-          <div class="final-logo-wrap">
-            <img
-              src="Teriaq-logo-@4x (1).png"
-              alt="Oncology Center Logo"
-            />
-          </div>
-          <h2 class="final-title" data-i18n="final.title">Book a consultation now</h2>
-          <p class="final-sub" data-i18n="final.sub">
-            Let our team help you navigate the path toward the right treatment and the care you deserve.
-          </p>
-          <button class="final-btn" data-scroll-to="#booking">
-            <i class="bx bx-calendar"></i>
-            <span data-i18n="final.cta">Book Now</span>
-          </button>
-        </div>
-      </div>
-
-      <div class="final-footer">
-        <div class="container">
-          <div class="final-footer-grid">
-            <div class="final-footer-logo">
-              
-              <div>
-                <div class="final-footer-brand" data-i18n="footer.brand">Oncology Center</div>
-                <div class="final-footer-text" data-i18n="footer.desc">
-                  Comprehensive oncology care led by specialists from Kasr Al-Ainy Faculty of
-                  Medicine.
+              <div class="booking-side-card">
+                <div class="booking-side-icon">
+                  <i class="bx bxs-user-check"></i>
                 </div>
-              </div>
-            </div>
-
-            <div>
-              <div class="final-footer-heading" data-i18n="footer.contactHeading">Contact</div>
-              <div class="final-footer-list">
                 <div>
-                  <span data-i18n="footer.phoneLabel">Phone:</span>
-                  <a href="tel:201103600787" class="final-link">+20 110 360 0787</a>
-                </div>
-                <div data-i18n="footer.whatsapp">WhatsApp: same as phone number</div>
-                <div data-i18n="footer.location">Location: Kasr Al-Ainy area, Cairo</div>
-              </div>
-            </div>
-
-            <div>
-              <div class="final-footer-heading" data-i18n="footer.followHeading">Follow Us</div>
-              <div class="final-footer-list">
-                <div data-i18n="footer.followText">Stay connected with our latest updates.</div>
-                <div class="final-socials">
-                  <a href="https://www.facebook.com/TeriaqMCdf/" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
-                  <a href="https://www.instagram.com/teriaqmcdf" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
-                  <a href="https://www.youtube.com/channel/UC7bzV2cV6crZiOhMZwg7ljA" aria-label="YouTube"><i class="bx bxl-youtube"></i></a>
+                  <div
+                    class="booking-side-title"
+                    data-i18n="booking.side2.title"
+                  >
+                    Reviewed by a doctor
+                  </div>
+                  <p class="booking-side-text" data-i18n="booking.side2.text">
+                    Your request is reviewed directly by a medical team member,
+                    not a bot.
+                  </p>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div class="final-bottom">
-            <div data-i18n="footer.copyright">
-              © <span id="finalYear"></span> Oncology Center. All rights reserved.
+              <div class="booking-side-card">
+                <div class="booking-side-icon">
+                  <i class="bx bxs-lock-alt"></i>
+                </div>
+                <div>
+                  <div
+                    class="booking-side-title"
+                    data-i18n="booking.side3.title"
+                  >
+                    Confidential & secure
+                  </div>
+                  <p class="booking-side-text" data-i18n="booking.side3.text">
+                    We keep your details private and use them only to arrange
+                    your consultation.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div data-i18n="footer.tagline">There's Always Hope.</div>
           </div>
         </div>
-      </div>
-    </section>
-  </div>
+      </section>
 
-  <div
-    id="bookingModal"
-    class="booking-modal"
-    role="dialog"
-    aria-modal="true"
-    aria-labelledby="bookingModalTitle"
-    aria-hidden="true"
-  >
-    <div class="booking-modal__backdrop" id="bookingModalBackdrop" tabindex="-1"></div>
-    <div class="booking-modal__panel">
-      <div class="booking-modal__icon booking-modal__icon--success" id="bookingModalIconWrap">
-        <i class="bx bx-check" id="bookingModalIcon" aria-hidden="true"></i>
-      </div>
-      <h3 class="booking-modal__title" id="bookingModalTitle"></h3>
-      <p class="booking-modal__body" id="bookingModalBody"></p>
-      <button type="button" class="booking-modal__btn" id="bookingModalClose"></button>
+      <!-- SECTION 7: FINAL CTA + FOOTER -->
+      <section class="final-section section" id="cta">
+        <div class="container">
+          <div class="final-inner">
+            <div class="final-logo-wrap">
+              <img src="Teriaq-logo-@4x (1).png" alt="Oncology Center Logo" />
+            </div>
+            <h2 class="final-title" data-i18n="final.title">
+              Book a consultation now
+            </h2>
+            <p class="final-sub" data-i18n="final.sub">
+              Let our team help you navigate the path toward the right treatment
+              and the care you deserve.
+            </p>
+            <button class="final-btn" data-scroll-to="#booking">
+              <i class="bx bx-calendar"></i>
+              <span data-i18n="final.cta">Book Now</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="final-footer">
+          <div class="container">
+            <div class="final-footer-grid">
+              <div class="final-footer-logo">
+                <div>
+                  <div class="final-footer-brand" data-i18n="footer.brand">
+                    Oncology Center
+                  </div>
+                  <div class="final-footer-text" data-i18n="footer.desc">
+                    Comprehensive oncology care led by specialists from Kasr
+                    Al-Ainy Faculty of Medicine.
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div
+                  class="final-footer-heading"
+                  data-i18n="footer.contactHeading"
+                >
+                  Contact
+                </div>
+                <div class="final-footer-list">
+                  <div>
+                    <span data-i18n="footer.phoneLabel">Phone:</span>
+                    <a href="tel:201103600787" class="final-link"
+                      >+20 110 360 0787</a
+                    >
+                  </div>
+                  <div data-i18n="footer.whatsapp">
+                    WhatsApp: same as phone number
+                  </div>
+                  <div data-i18n="footer.location">
+                    Location: Kasr Al-Ainy area, Cairo
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div
+                  class="final-footer-heading"
+                  data-i18n="footer.followHeading"
+                >
+                  Follow Us
+                </div>
+                <div class="final-footer-list">
+                  <div data-i18n="footer.followText">
+                    Stay connected with our latest updates.
+                  </div>
+                  <div class="final-socials">
+                    <a
+                      href="https://www.facebook.com/TeriaqMCdf/"
+                      aria-label="Facebook"
+                      ><i class="bx bxl-facebook"></i
+                    ></a>
+                    <a
+                      href="https://www.instagram.com/teriaqmcdf"
+                      aria-label="Instagram"
+                      ><i class="bx bxl-instagram"></i
+                    ></a>
+                    <a
+                      href="https://www.youtube.com/channel/UC7bzV2cV6crZiOhMZwg7ljA"
+                      aria-label="YouTube"
+                      ><i class="bx bxl-youtube"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="final-bottom">
+              <div data-i18n="footer.copyright">
+                © <span id="finalYear"></span> Oncology Center. All rights
+                reserved.
+              </div>
+              <div data-i18n="footer.tagline">There's Always Hope.</div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-  </div>
-</body>
-<script>
-  const translations = {
-    en: {
-      "toggle.label": "عربي",
-      "hero.eyebrow": "There's Always Hope",
-      "hero.headingMain": "Welcome to Teriaq Oncology Center",
-      "hero.sub":
-        "A dream that began several years ago to provide outstanding medical care for cancer patients, while working to improve the quality of scientific research in oncology.",
-      "hero.sub2":
-        "Our goal is to increase the efficiency of diagnosis and treatment, as well as post-recovery care and cancer prevention.",
-      "hero.ctaPrimary": "Book Your Consultation",
-      "hero.ctaSecondary": "View Services",
-      "hero.meta1": "Kasr Al-Ainy Faculty of Medicine",
-      "hero.meta2": "Specialized Medical Services",
-      "about.kicker": "Who We Are",
-      "about.title": "Teriaq Oncology Center",
-      "about.sub":
-        "Teriaq Oncology Center offers integrated oncology services designed to guide and support patients at every stage of care. Supported by a network of experienced oncology physicians from across Egypt and leading medical schools, our team brings together diverse expertise to deliver coordinated, high-quality cancer care tailored to each patient’s individual needs.",
-      "about.card1.title": "Patient-Centered Care",
-      "about.card1.text":
-        "Every treatment plan is carefully tailored to each patient’s medical condition, personal needs, and overall well-being.",
-      "about.card2.title": "Evidence-Based Medicine",
-      "about.card2.text":
-        "We follow the latest international oncology guidelines and treatment protocols to ensure the highest standards of care and the best possible outcomes.",
-      "about.card3.title": "Multidisciplinary Expertise",
-      "about.card3.text":
-        "We are proud to introduce Egypt's first oncology Consulto program, a collaborative platform where physicians from multiple oncology disciplines work together to provide comprehensive evaluation and personalized treatment planning.",
-      "about.approachTitle": "Our Approach to Care",
-      "about.card1.text":
-        "Every patient is unique. That's why we develop individualized treatment plans that consider each patient's medical condition, personal needs, and overall well-being.",
-      "about.card2.text":
-        "Our treatments follow the latest international oncology guidelines and medical research to ensure patients receive the highest standard of care and the best possible outcomes.",
-      "services.kicker": "Our Services",
-      "services.title": "Integrated Comprehensive Oncology Care",
-      "services.sub":
-        "Comprehensive oncology and supportive services designed to guide and support patients through every stage of care, from diagnosis and treatment to recovery and long-term follow-up.",
-      "services.card1.title": "Oncology Examination",
-      "services.card1.text":
-        "Comprehensive evaluation, diagnosis, treatment planning, and follow-up care provided by our oncology physicians.",
-      "services.card2.title": "Physical Therapy",
-      "services.card2.text":
-        "Personalized rehabilitation programs designed to restore strength, improve mobility, and support recovery during and after treatment.",
-      "services.card3.title": "Clinical Nutrition Consultation",
-      "services.card3.text":
-        "Tailored nutritional guidance to help patients maintain strength, manage treatment side effects, and support overall recovery.",
-      "services.card4.title": "Online Consultation",
-      "services.card4.text":
-        "Convenient virtual consultations that allow patients to receive expert medical advice and follow-up care from the comfort of their homes.",
-      "services.card5.title": "Consulto (Multidisciplinary Consultation)",
-      "services.card5.text":
-        "Egypt’s first oncology Consulto program, where physicians from multiple oncology disciplines collaborate to provide comprehensive evaluation and personalized treatment planning for each patient.",
-      "services.card12.title": "Home care",
-      "services.card12.text":
-        "Professional nursing and supportive oncology care delivered in the comfort of your home.",
-      "trust.kicker": "Why Patients Trust Us",
-      "trust.title": "Why Patients Trust Us",
-      "trust.sub":
-        "Patients choose Oncology Center for experienced specialists, clear explanations, and confidential, compassionate care at every step of the journey.",
-      "trust.card1": "Experienced Doctors",
-      "trust.card2": "Evidence-Based Treatment",
-      "trust.card3": "Personalized Care",
-      "trust.card4": "Confidential Medical Consultation",
-      "doctor.kicker": "Leadership",
-      "doctor.title": "Dr. Mohamed El Shazly",
-      "doctor.sub":
-        "Facing cancer can feel overwhelming for patients and their families. At Teriaq Oncology Center, we are here to guide you with expertise, compassion, and clarity.",
-      "doctor.infoTitle": "Leadership",
-      "doctor.name": "Dr. Mohamed El Shazly",
-      "doctor.role": "Oncology and Bone Marrow Transplantation Consultant",
-      "doctor.badge1": "Lecturer of Oncology – Alexandria University",
-      "doctor.badge2": "Fellow, MD Anderson Cancer Center – Texas, USA",
-      "doctor.badge3": "Fellow, Dana-Farber Cancer Institute – Harvard University, USA",
-      "doctor.text":
-        "MBBCh, M.Sc, MD. Consultant of Clinical Oncology. Hemato-Oncology & Bone Marrow Transplantation. Lecturer of Clinical Oncology, Alexandria Faculty of Medicine. Fellow of MD Anderson Cancer Center, Texas, USA. Fellow of Dana-Farber Cancer Institute, Harvard University, USA.",
-      "gallery.kicker": "Clinic View",
-      "gallery.title": "Inside Teriq Oncology Center",
-      "gallery.sub":
-        "A calm, modern clinical environment designed to keep you comfortable from the waiting area to the consultation rooms.",
-      "gallery.caption1": "Reception & waiting area",
-      "gallery.caption2": "Reception & waiting area",
-      "gallery.caption3": "Reception & waiting area",
-      "gallery.caption4": "Reception & waiting area",
-      "booking.kicker": "Appointments",
-      "booking.title": "Request an Appointment",
-      "booking.sub":
-        "Fill in your details and we'll get back to you within a short time to confirm your appointment and answer any questions.",
-      "booking.cardTitle": "Appointment details",
-      "booking.cardSub": "Share your basic information and preferred service.",
-      "booking.chip": "1–2 min to complete",
-      "booking.patientNameLabel": "Patient Name",
-      "booking.phoneLabel": "Phone Number",
-      "booking.serviceTypeLabel": "Service Type",
-      "booking.patientNamePlaceholder": "Enter your full name",
-      "booking.phonePlaceholder": "Enter your phone number",
-      "booking.servicePlaceholder": "Select a service",
-      "booking.service1": "Oncology clinic",
-      "booking.service2": "Physiotherapy clinic",
-      "booking.service3": "Nutrition clinic",
-      "booking.service4": "Online Consultation",
-      "booking.service5": "Consolto MDT clinic",
-      "booking.service6": "Home care",
-      "booking.consultoLabel": "ConsulTO Specialty",
-      "booking.consultoPlaceholder": "Select a specialty",
-      "booking.consulto1": "Gynecologic Oncology",
-      "booking.consulto2": "Surgical Oncology",
-      "booking.consulto3": "Medical Oncology",
-      "booking.consulto4": "Radiology Consultation",
-      "booking.consulto5": "Pathology Consultation",
-      "booking.consultoHelper":
-        "Choose the sub‑specialty that best matches your case for a more focused opinion.",
-      "booking.submit": "Request Appointment",
-      "booking.note":
-        "Your information is kept confidential and used only to contact you regarding your appointment.",
-      "booking.side1.title": "Fast response",
-      "booking.side1.text": "Most appointment requests are answered within 1–2 working hours.",
-      "booking.side2.title": "Reviewed by a doctor",
-      "booking.side2.text":
-        "Your request is reviewed directly by a medical team member, not a bot.",
-      "booking.side3.title": "Confidential & secure",
-      "booking.side3.text":
-        "We keep your details private and use them only to arrange your consultation.",
-      "final.title": "Book a consultation now",
-      "final.sub":
-        "Let our team help you navigate the path toward the right treatment and the care you deserve.",
-      "final.cta": "Book Now",
-      "footer.desc":
-        "Comprehensive oncology care led by specialists from Kasr Al-Ainy Faculty of Medicine.",
-      "footer.brand": "Oncology Center",
-      "footer.contactHeading": "Contact",
-      "footer.phoneLabel": "Phone:",
-      "footer.whatsapp": "WhatsApp: same as phone number",
-      "footer.location": "Address: 247 El Horreya Road, in front of Club Gate, Alexandria Governorate",
-      "footer.followHeading": "Follow Us",
-      "footer.followText": "Stay connected with our latest updates.",
-      "footer.tagline": "There's Always Hope.",
-      "footer.copyright":
-        "© {year} Oncology Center. All rights reserved."
-    },
-    ar: {
-      "toggle.label": "English",
-      "hero.eyebrow": "دائمًا هناك أمل",
-      "hero.headingMain": "مرحبًا بكم في مركز تِرياق لعلاج الأورام",
-      "hero.sub":
-        "حلم بدأ منذ سنوات لتقديم رعاية طبية متميّزة لمرضى السرطان، والعمل على رفع جودة البحث العلمي في مجال الأورام.",
-      "hero.sub2":
-        "هدفنا هو رفع كفاءة التشخيص والعلاج، ورعاية ما بعد التعافي، والوقاية من السرطان.",
-      "hero.ctaPrimary": "احجز استشارتك الآن",
-      "hero.ctaSecondary": "عرض الخدمات",
-      "hero.meta1": "كلية طب قصر العيني",
-      "hero.meta2": "خدمات طبية متخصّصة",
-      "about.kicker": "من نحن",
-      "about.title": "مركز تِرياق لعلاج الأورام",
-      "about.sub":
-        "يقدّم مركز تِرياق لعلاج الأورام خدمات أورام متكاملة مصمَّمة لمرافقة المريض ودعمه في كل مرحلة من مراحل الرعاية. بدعم شبكة من أطباء الأورام ذوي الخبرة من مختلف أنحاء مصر ومن كليات طب رائدة، يجمع فريقنا خبرات متنوّعة لتقديم رعاية أورام منسّقة عالية الجودة تناسب احتياجات كل مريض على حدة.",
-      "about.approachTitle": "نهجنا في الرعاية",
-      "about.card1.title": "رعاية تتمحور حول المريض",
-      "about.card1.text":
-        "كل مريض فريد. لذلك نضع خطط علاج فردية تراعي حالته الطبية واحتياجاته الشخصية وجودة حياته.",
-      "about.card2.title": "طب قائم على الدليل",
-      "about.card2.text":
-        "نلتزم بأحدث الإرشادات والبحوث العالمية في علاج الأورام لضمان أعلى معايير الرعاية وأفضل النتائج الممكنة.",
-      "about.card3.title": "خبرات متعدّدة التخصّصات",
-      "about.card3.text":
-        "نفخر بتقديم أوّل برنامج كونسلتو لعلاج الأورام في مصر، منصة تعاونية يجتمع فيها أطباء من تخصّصات أورام متعدّدة لتقديم تقييم شامل وخطة علاج مخصّصة.",
-      "services.kicker": "خدماتنا",
-      "services.title": "في مركز تِرياق لعلاج الأورام",
-      "services.sub":
-        "نقدّم خدمات أورام شاملة مصمَّمة لمساندة المرضى في كل مرحلة من مراحل الرعاية.",
-      "services.card1.title": "العلاج الكيماوي",
-      "services.card1.text": "بروتوكولات علاج كيماوي حديثة في بيئة آمنة وداعمة.",
-      "services.card2.title": "العلاج الإشعاعي",
-      "services.card2.text": "علاج إشعاعي دقيق مستهدف للأورام.",
-      "services.card3.title": "العلاج الإشعاعي بالتصوير المتقدّم",
-      "services.card3.text": "علاج إشعاعي موجّه بالتصوير لتحقيق دقة ونتائج أفضل.",
-      "services.card4.title": "زراعة النخاع العظمي",
-      "services.card4.text": "رعاية متخصّصة في أمراض الدم والأورام وزراعة النخاع.",
-      "services.card5.title": "إدارة الألم",
-      "services.card5.text": "دعم متخصّص للتحكّم في الألم وتحسين جودة الحياة.",
-      "services.card6.title": "الدعم النفسي (الصحة النفسية)",
-      "services.card6.text": "استشارات ودعم نفسي للمرضى والعائلات.",
-      "services.card7.title": "عيادة التغذية",
-      "services.card7.text": "إرشادات تغذوية مخصّصة أثناء العلاج وبعده.",
-      "services.card8.title": "الكشف المبكر والاستشارة الوراثية",
-      "services.card8.text": "فحوصات واستشارات وراثية للمعرضين للخطر.",
-      "services.card9.title": "الخدمات الصيدلانية",
-      "services.card9.text": "صيدلة أورام وإدارة الأدوية.",
-      "services.card10.title": "برنامج التعافي",
-      "services.card10.text": "دعم التأهيل والتعافي بعد العلاج.",
-      "services.card11.title": "كونسلتو (استشارة متعددة التخصّصات)",
-      "services.card11.text": "أوّل كونسلتو أورام في مصر: تخصّصات متعدّدة، خطة علاج واحدة منسّقة.",
-      "services.card12.title": "الرعاية المنزلية",
-      "services.card12.text":
-        "دعم أورام وتمريض مهني في منزلك براحة وأمان.",
-      "trust.kicker": "لماذا يثق بنا المرضى",
-      "trust.title": "لماذا يثق بنا المرضى",
-      "trust.sub":
-        "يختار المرضى مركز الأورام لخبرة الأطباء، ووضوح الشرح، ورعاية إنسانية تحترم السرّية في كل خطوة.",
-      "trust.card1": "أطباء ذوو خبرة",
-      "trust.card2": "علاج قائم على الدليل",
-      "trust.card3": "رعاية شخصية",
-      "trust.card4": "استشارة طبية سرّية",
-      "doctor.kicker": "القيادة",
-      "doctor.title": "د. محمد الشاذلي",
-      "doctor.sub":
-        "مواجهة السرطان قد تكون صعبة على المرضى وعائلاتهم. في مركز تِرياق لعلاج الأورام، نحن هنا لمرافقتك بالخبرة والوضوح والتعاطف.",
-      "doctor.infoTitle": "القيادة",
-      "doctor.name": "د. محمد الشاذلي",
-      "doctor.role": "استشاري علاج الأورام وزراعة النخاع العظمي",
-      "doctor.badge1": "مدرّس علاج الأورام – جامعة الإسكندرية",
-      "doctor.badge2": "زميل مركز إم دي أندرسون – تكساس، الولايات المتحدة",
-      "doctor.badge3": "زميل معهد دانا فاربر للسرطان – هارفارد، الولايات المتحدة",
-      "doctor.text":
-        "بكالوريوس الطب والجراحة، ماجستير، دكتوراه (MBBCh, M.Sc, MD). استشاري علاج الأورام السريرية. أمراض الدم والأورام وزراعة النخاع العظمي. مدرّس علاج الأورام السريرية، كلية الطب، جامعة الإسكندرية. زميل مركز إم دي أندرسون لعلاج السرطان، تكساس، الولايات المتحدة. زميل معهد دانا فاربر للسرطان، جامعة هارفارد، الولايات المتحدة.",
-      "gallery.kicker": "شكل العيادة",
-      "gallery.title": "من داخل مركز ترياُق لعلاج الأورام",
-      "gallery.sub":
-        "بيئة طبية هادئة وعصرية تهدف لراحتك من لحظة دخولك للاستقبال وحتى غرفة الاستشارة.",
-      "gallery.caption1": "الاستقبال و منطقة الانتظار",
-      "gallery.caption2": "الاستقبال و منطقة الانتظار",
-      "gallery.caption3": "الاستقبال و منطقة الانتظار",
-      "gallery.caption4": "الاستقبال و منطقة الانتظار",
-      "booking.kicker": "حجز المواعيد",
-      "booking.title": "طلب حجز موعد",
-      "booking.sub":
-        "املأ بياناتك وسنقوم بالتواصل معك في أقرب وقت لتأكيد الموعد والإجابة عن استفساراتك.",
-      "booking.cardTitle": "بيانات الموعد",
-      "booking.cardSub": "أدخل بياناتك الأساسية واختر الخدمة المطلوبة.",
-      "booking.chip": "يستغرق 1–2 دقيقة فقط",
-      "booking.patientNameLabel": "اسم المريض",
-      "booking.phoneLabel": "رقم الهاتف",
-      "booking.serviceTypeLabel": "نوع الخدمة",
-      "booking.patientNamePlaceholder": "اكتب الاسم ثلاثي",
-      "booking.phonePlaceholder": "اكتب رقم الهاتف",
-      "booking.servicePlaceholder": "اختر الخدمة",
-      "booking.service1": "كشف أورام",
-      "booking.service2": "العلاج الطبيعي",
-      "booking.service3": "استشارة تغذية",
-      "booking.service4": "استشارة أونلاين",
-      "booking.service5": "كونسلتو (ConsulTO)",
-      "booking.service6": "الرعاية المنزلية",
-      "booking.consultoLabel": "تخصّص كونسلتو",
-      "booking.consultoPlaceholder": "اختر التخصّص",
-      "booking.consulto1": "أورام النساء",
-      "booking.consulto2": "جراحة أورام",
-      "booking.consulto3": "أورام سريرية",
-      "booking.consulto4": "استشارة أشعة",
-      "booking.consulto5": "استشارة باثولوجي",
-      "booking.consultoHelper":
-        "اختر التخصّص الفرعي الأقرب لحالتك للحصول على رأي أكثر دقة.",
-      "booking.submit": "إرسال طلب الحجز",
-      "booking.note":
-        "نحافظ على سرية بياناتك، ونستخدمها فقط للتواصل معك بخصوص الموعد.",
-      "booking.side1.title": "استجابة سريعة",
-      "booking.side1.text": "نرد على أغلب طلبات الحجز خلال 1–2 ساعة عمل.",
-      "booking.side2.title": "مراجعة بواسطة طبيب",
-      "booking.side2.text": "يتم مراجعة طلبك مباشرة بواسطة أحد أعضاء الفريق الطبي، وليس روبوت.",
-      "booking.side3.title": "سرية وأمان تام",
-      "booking.side3.text": "نحافظ على خصوصية بياناتك ونستخدمها فقط لترتيب موعد الاستشارة.",
-      "final.title": "احجز استشارتك الآن",
-      "final.sub":
-        "دع فريقنا يساعدك في اختيار المسار المناسب للعلاج والرعاية التي تستحقها.",
-      "final.cta": "احجز الآن",
-      "footer.desc":
-        "رعاية شاملة في علاج الأورام تحت إشراف أساتذة من كلية طب قصر العيني.",
-      "footer.brand": "مركز الأورام",
-      "footer.contactHeading": "التواصل",
-      "footer.phoneLabel": "هاتف:",
-      "footer.whatsapp": "واتساب: نفس رقم الهاتف",
-      "footer.location": "العنوان: ٢٤٧ طريق الحرية، أمام بوابة النادي، محافظة الإسكندرية",
-      "footer.followHeading": "تابعنا",
-      "footer.followText": "تابع أحدث الأخبار والمحتوى من المركز.",
-      "footer.tagline": "دائمًا هناك أمل.",
-      "footer.copyright":
-        "© {year} مركز الأورام. جميع الحقوق محفوظة."
-    }
-  };
 
-  let currentLang = "en";
+    <div
+      id="bookingModal"
+      class="booking-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="bookingModalTitle"
+      aria-hidden="true"
+    >
+      <div
+        class="booking-modal__backdrop"
+        id="bookingModalBackdrop"
+        tabindex="-1"
+      ></div>
+      <div class="booking-modal__panel">
+        <div
+          class="booking-modal__icon booking-modal__icon--success"
+          id="bookingModalIconWrap"
+        >
+          <i class="bx bx-check" id="bookingModalIcon" aria-hidden="true"></i>
+        </div>
+        <h3 class="booking-modal__title" id="bookingModalTitle"></h3>
+        <p class="booking-modal__body" id="bookingModalBody"></p>
+        <button
+          type="button"
+          class="booking-modal__btn"
+          id="bookingModalClose"
+        ></button>
+      </div>
+    </div>
+  </body>
+  <script>
+    const translations = {
+      en: {
+        "toggle.label": "عربي",
+        "hero.eyebrow": "There's Always Hope",
+        "hero.headingMain": "Welcome to Teriaq Oncology Center",
+        "hero.sub":
+          "A dream that began several years ago to provide outstanding medical care for cancer patients, while working to improve the quality of scientific research in oncology.",
+        "hero.sub2":
+          "Our goal is to increase the efficiency of diagnosis and treatment, as well as post-recovery care and cancer prevention.",
+        "hero.ctaPrimary": "Book Your Consultation",
+        "hero.ctaSecondary": "View Services",
+        "hero.meta1": "Kasr Al-Ainy Faculty of Medicine",
+        "hero.meta2": "Specialized Medical Services",
+        "about.kicker": "Who We Are",
+        "about.title": "Teriaq Oncology Center",
+        "about.sub":
+          "Teriaq Oncology Center offers integrated oncology services designed to guide and support patients at every stage of care. Supported by a network of experienced oncology physicians from across Egypt and leading medical schools, our team brings together diverse expertise to deliver coordinated, high-quality cancer care tailored to each patient’s individual needs.",
+        "about.card1.title": "Patient-Centered Care",
+        "about.card1.text":
+          "Every treatment plan is carefully tailored to each patient’s medical condition, personal needs, and overall well-being.",
+        "about.card2.title": "Evidence-Based Medicine",
+        "about.card2.text":
+          "We follow the latest international oncology guidelines and treatment protocols to ensure the highest standards of care and the best possible outcomes.",
+        "about.card3.title": "Multidisciplinary Expertise",
+        "about.card3.text":
+          "We are proud to introduce Egypt's first oncology Consulto program, a collaborative platform where physicians from multiple oncology disciplines work together to provide comprehensive evaluation and personalized treatment planning.",
+        "about.approachTitle": "Our Approach to Care",
+        "about.card1.text":
+          "Every patient is unique. That's why we develop individualized treatment plans that consider each patient's medical condition, personal needs, and overall well-being.",
+        "about.card2.text":
+          "Our treatments follow the latest international oncology guidelines and medical research to ensure patients receive the highest standard of care and the best possible outcomes.",
+        "services.kicker": "Our Services",
+        "services.title": "Integrated Comprehensive Oncology Care",
+        "services.sub":
+          "Comprehensive oncology and supportive services designed to guide and support patients through every stage of care, from diagnosis and treatment to recovery and long-term follow-up.",
+        "services.card1.title": "Oncology Examination",
+        "services.card1.text":
+          "Comprehensive evaluation, diagnosis, treatment planning, and follow-up care provided by our oncology physicians.",
+        "services.card2.title": "Physical Therapy",
+        "services.card2.text":
+          "Personalized rehabilitation programs designed to restore strength, improve mobility, and support recovery during and after treatment.",
+        "services.card3.title": "Clinical Nutrition Consultation",
+        "services.card3.text":
+          "Tailored nutritional guidance to help patients maintain strength, manage treatment side effects, and support overall recovery.",
+        "services.card4.title": "Online Consultation",
+        "services.card4.text":
+          "Convenient virtual consultations that allow patients to receive expert medical advice and follow-up care from the comfort of their homes.",
+        "services.card5.title": "Consulto (Multidisciplinary Consultation)",
+        "services.card5.text":
+          "Egypt’s first oncology Consulto program, where physicians from multiple oncology disciplines collaborate to provide comprehensive evaluation and personalized treatment planning for each patient.",
+        "services.card12.title": "Home care",
+        "services.card12.text":
+          "Professional nursing and supportive oncology care delivered in the comfort of your home.",
+        "trust.kicker": "Why Patients Trust Us",
+        "trust.title": "Why Patients Trust Us",
+        "trust.sub":
+          "Patients choose Oncology Center for experienced specialists, clear explanations, and confidential, compassionate care at every step of the journey.",
+        "trust.card1": "Experienced Doctors",
+        "trust.card2": "Evidence-Based Treatment",
+        "trust.card3": "Personalized Care",
+        "trust.card4": "Confidential Medical Consultation",
+        "doctor.kicker": "Leadership",
+        "doctor.title": "Dr. Mohamed El Shazly",
+        "doctor.sub":
+          "Facing cancer can feel overwhelming for patients and their families. At Teriaq Oncology Center, we are here to guide you with expertise, compassion, and clarity.",
+        "doctor.infoTitle": "Leadership",
+        "doctor.name": "Dr. Mohamed El Shazly",
+        "doctor.role": "Oncology and Bone Marrow Transplantation Consultant",
+        "doctor.badge1": "Lecturer of Oncology – Alexandria University",
+        "doctor.badge2": "Fellow, MD Anderson Cancer Center – Texas, USA",
+        "doctor.badge3":
+          "Fellow, Dana-Farber Cancer Institute – Harvard University, USA",
+        "doctor.text":
+          "MBBCh, M.Sc, MD. Consultant of Clinical Oncology. Hemato-Oncology & Bone Marrow Transplantation. Lecturer of Clinical Oncology, Alexandria Faculty of Medicine. Fellow of MD Anderson Cancer Center, Texas, USA. Fellow of Dana-Farber Cancer Institute, Harvard University, USA.",
+        "gallery.kicker": "Clinic View",
+        "gallery.title": "Inside Teriq Oncology Center",
+        "gallery.sub":
+          "A calm, modern clinical environment designed to keep you comfortable from the waiting area to the consultation rooms.",
+        "gallery.caption1": "Reception & waiting area",
+        "gallery.caption2": "Reception & waiting area",
+        "gallery.caption3": "Reception & waiting area",
+        "gallery.caption4": "Reception & waiting area",
+        "booking.kicker": "Appointments",
+        "booking.title": "Request an Appointment",
+        "booking.sub":
+          "Fill in your details and we'll get back to you within a short time to confirm your appointment and answer any questions.",
+        "booking.cardTitle": "Appointment details",
+        "booking.cardSub":
+          "Share your basic information and preferred service.",
+        "booking.chip": "1–2 min to complete",
+        "booking.patientNameLabel": "Patient Name",
+        "booking.phoneLabel": "Phone Number",
+        "booking.serviceTypeLabel": "Service Type",
+        "booking.patientNamePlaceholder": "Enter your full name",
+        "booking.phonePlaceholder": "Enter your phone number",
+        "booking.servicePlaceholder": "Select a service",
+        "booking.service1": "Oncology clinic",
+        "booking.service2": "Physiotherapy clinic",
+        "booking.service3": "Nutrition clinic",
+        "booking.service4": "Online Consultation",
+        "booking.service5": "Consolto MDT clinic",
+        "booking.service6": "Home care",
+        "booking.consultoLabel": "ConsulTO Specialty",
+        "booking.consultoPlaceholder": "Select a specialty",
+        "booking.consulto1": "Gynecologic Oncology",
+        "booking.consulto2": "Surgical Oncology",
+        "booking.consulto3": "Medical Oncology",
+        "booking.consulto4": "Radiology Consultation",
+        "booking.consulto5": "Pathology Consultation",
+        "booking.consultoHelper":
+          "Choose the sub‑specialty that best matches your case for a more focused opinion.",
+        "booking.submit": "Request Appointment",
+        "booking.note":
+          "Your information is kept confidential and used only to contact you regarding your appointment.",
+        "booking.side1.title": "Fast response",
+        "booking.side1.text":
+          "Most appointment requests are answered within 1–2 working hours.",
+        "booking.side2.title": "Reviewed by a doctor",
+        "booking.side2.text":
+          "Your request is reviewed directly by a medical team member, not a bot.",
+        "booking.side3.title": "Confidential & secure",
+        "booking.side3.text":
+          "We keep your details private and use them only to arrange your consultation.",
+        "final.title": "Book a consultation now",
+        "final.sub":
+          "Let our team help you navigate the path toward the right treatment and the care you deserve.",
+        "final.cta": "Book Now",
+        "footer.desc":
+          "Comprehensive oncology care led by specialists from Kasr Al-Ainy Faculty of Medicine.",
+        "footer.brand": "Oncology Center",
+        "footer.contactHeading": "Contact",
+        "footer.phoneLabel": "Phone:",
+        "footer.whatsapp": "WhatsApp: same as phone number",
+        "footer.location":
+          "Address: 247 El Horreya Road, in front of Club Gate, Alexandria Governorate",
+        "footer.followHeading": "Follow Us",
+        "footer.followText": "Stay connected with our latest updates.",
+        "footer.tagline": "There's Always Hope.",
+        "footer.copyright": "© {year} Oncology Center. All rights reserved.",
+      },
+      ar: {
+        "toggle.label": "English",
+        "hero.eyebrow": "دائمًا هناك أمل",
+        "hero.headingMain": "مرحبًا بكم في مركز تِرياق لعلاج الأورام",
+        "hero.sub":
+          "حلم بدأ منذ سنوات لتقديم رعاية طبية متميّزة لمرضى السرطان، والعمل على رفع جودة البحث العلمي في مجال الأورام.",
+        "hero.sub2":
+          "هدفنا هو رفع كفاءة التشخيص والعلاج، ورعاية ما بعد التعافي، والوقاية من السرطان.",
+        "hero.ctaPrimary": "احجز استشارتك الآن",
+        "hero.ctaSecondary": "عرض الخدمات",
+        "hero.meta1": "كلية طب قصر العيني",
+        "hero.meta2": "خدمات طبية متخصّصة",
+        "about.kicker": "من نحن",
+        "about.title": "مركز تِرياق لعلاج الأورام",
+        "about.sub":
+          "يقدّم مركز تِرياق لعلاج الأورام خدمات أورام متكاملة مصمَّمة لمرافقة المريض ودعمه في كل مرحلة من مراحل الرعاية. بدعم شبكة من أطباء الأورام ذوي الخبرة من مختلف أنحاء مصر ومن كليات طب رائدة، يجمع فريقنا خبرات متنوّعة لتقديم رعاية أورام منسّقة عالية الجودة تناسب احتياجات كل مريض على حدة.",
+        "about.approachTitle": "نهجنا في الرعاية",
+        "about.card1.title": "رعاية تتمحور حول المريض",
+        "about.card1.text":
+          "كل مريض فريد. لذلك نضع خطط علاج فردية تراعي حالته الطبية واحتياجاته الشخصية وجودة حياته.",
+        "about.card2.title": "طب قائم على الدليل",
+        "about.card2.text":
+          "نلتزم بأحدث الإرشادات والبحوث العالمية في علاج الأورام لضمان أعلى معايير الرعاية وأفضل النتائج الممكنة.",
+        "about.card3.title": "خبرات متعدّدة التخصّصات",
+        "about.card3.text":
+          "نفخر بتقديم أوّل برنامج كونسلتو لعلاج الأورام في مصر، منصة تعاونية يجتمع فيها أطباء من تخصّصات أورام متعدّدة لتقديم تقييم شامل وخطة علاج مخصّصة.",
+        "services.kicker": "خدماتنا",
+        "services.title": "في مركز تِرياق لعلاج الأورام",
+        "services.sub":
+          "نقدّم خدمات أورام شاملة مصمَّمة لمساندة المرضى في كل مرحلة من مراحل الرعاية.",
+        "services.card1.title": "العلاج الكيماوي",
+        "services.card1.text":
+          "بروتوكولات علاج كيماوي حديثة في بيئة آمنة وداعمة.",
+        "services.card2.title": "العلاج الإشعاعي",
+        "services.card2.text": "علاج إشعاعي دقيق مستهدف للأورام.",
+        "services.card3.title": "العلاج الإشعاعي بالتصوير المتقدّم",
+        "services.card3.text":
+          "علاج إشعاعي موجّه بالتصوير لتحقيق دقة ونتائج أفضل.",
+        "services.card4.title": "زراعة النخاع العظمي",
+        "services.card4.text":
+          "رعاية متخصّصة في أمراض الدم والأورام وزراعة النخاع.",
+        "services.card5.title": "إدارة الألم",
+        "services.card5.text":
+          "دعم متخصّص للتحكّم في الألم وتحسين جودة الحياة.",
+        "services.card6.title": "الدعم النفسي (الصحة النفسية)",
+        "services.card6.text": "استشارات ودعم نفسي للمرضى والعائلات.",
+        "services.card7.title": "عيادة التغذية",
+        "services.card7.text": "إرشادات تغذوية مخصّصة أثناء العلاج وبعده.",
+        "services.card8.title": "الكشف المبكر والاستشارة الوراثية",
+        "services.card8.text": "فحوصات واستشارات وراثية للمعرضين للخطر.",
+        "services.card9.title": "الخدمات الصيدلانية",
+        "services.card9.text": "صيدلة أورام وإدارة الأدوية.",
+        "services.card10.title": "برنامج التعافي",
+        "services.card10.text": "دعم التأهيل والتعافي بعد العلاج.",
+        "services.card11.title": "كونسلتو (استشارة متعددة التخصّصات)",
+        "services.card11.text":
+          "أوّل كونسلتو أورام في مصر: تخصّصات متعدّدة، خطة علاج واحدة منسّقة.",
+        "services.card12.title": "الرعاية المنزلية",
+        "services.card12.text": "دعم أورام وتمريض مهني في منزلك براحة وأمان.",
+        "trust.kicker": "لماذا يثق بنا المرضى",
+        "trust.title": "لماذا يثق بنا المرضى",
+        "trust.sub":
+          "يختار المرضى مركز الأورام لخبرة الأطباء، ووضوح الشرح، ورعاية إنسانية تحترم السرّية في كل خطوة.",
+        "trust.card1": "أطباء ذوو خبرة",
+        "trust.card2": "علاج قائم على الدليل",
+        "trust.card3": "رعاية شخصية",
+        "trust.card4": "استشارة طبية سرّية",
+        "doctor.kicker": "القيادة",
+        "doctor.title": "د. محمد الشاذلي",
+        "doctor.sub":
+          "مواجهة السرطان قد تكون صعبة على المرضى وعائلاتهم. في مركز تِرياق لعلاج الأورام، نحن هنا لمرافقتك بالخبرة والوضوح والتعاطف.",
+        "doctor.infoTitle": "القيادة",
+        "doctor.name": "د. محمد الشاذلي",
+        "doctor.role": "استشاري علاج الأورام وزراعة النخاع العظمي",
+        "doctor.badge1": "مدرّس علاج الأورام – جامعة الإسكندرية",
+        "doctor.badge2": "زميل مركز إم دي أندرسون – تكساس، الولايات المتحدة",
+        "doctor.badge3":
+          "زميل معهد دانا فاربر للسرطان – هارفارد، الولايات المتحدة",
+        "doctor.text":
+          "بكالوريوس الطب والجراحة، ماجستير، دكتوراه (MBBCh, M.Sc, MD). استشاري علاج الأورام السريرية. أمراض الدم والأورام وزراعة النخاع العظمي. مدرّس علاج الأورام السريرية، كلية الطب، جامعة الإسكندرية. زميل مركز إم دي أندرسون لعلاج السرطان، تكساس، الولايات المتحدة. زميل معهد دانا فاربر للسرطان، جامعة هارفارد، الولايات المتحدة.",
+        "gallery.kicker": "شكل العيادة",
+        "gallery.title": "من داخل مركز ترياُق لعلاج الأورام",
+        "gallery.sub":
+          "بيئة طبية هادئة وعصرية تهدف لراحتك من لحظة دخولك للاستقبال وحتى غرفة الاستشارة.",
+        "gallery.caption1": "الاستقبال و منطقة الانتظار",
+        "gallery.caption2": "الاستقبال و منطقة الانتظار",
+        "gallery.caption3": "الاستقبال و منطقة الانتظار",
+        "gallery.caption4": "الاستقبال و منطقة الانتظار",
+        "booking.kicker": "حجز المواعيد",
+        "booking.title": "طلب حجز موعد",
+        "booking.sub":
+          "املأ بياناتك وسنقوم بالتواصل معك في أقرب وقت لتأكيد الموعد والإجابة عن استفساراتك.",
+        "booking.cardTitle": "بيانات الموعد",
+        "booking.cardSub": "أدخل بياناتك الأساسية واختر الخدمة المطلوبة.",
+        "booking.chip": "يستغرق 1–2 دقيقة فقط",
+        "booking.patientNameLabel": "اسم المريض",
+        "booking.phoneLabel": "رقم الهاتف",
+        "booking.serviceTypeLabel": "نوع الخدمة",
+        "booking.patientNamePlaceholder": "اكتب الاسم ثلاثي",
+        "booking.phonePlaceholder": "اكتب رقم الهاتف",
+        "booking.servicePlaceholder": "اختر الخدمة",
+        "booking.service1": "كشف أورام",
+        "booking.service2": "العلاج الطبيعي",
+        "booking.service3": "استشارة تغذية",
+        "booking.service4": "استشارة أونلاين",
+        "booking.service5": "كونسلتو (ConsulTO)",
+        "booking.service6": "الرعاية المنزلية",
+        "booking.consultoLabel": "تخصّص كونسلتو",
+        "booking.consultoPlaceholder": "اختر التخصّص",
+        "booking.consulto1": "أورام النساء",
+        "booking.consulto2": "جراحة أورام",
+        "booking.consulto3": "أورام سريرية",
+        "booking.consulto4": "استشارة أشعة",
+        "booking.consulto5": "استشارة باثولوجي",
+        "booking.consultoHelper":
+          "اختر التخصّص الفرعي الأقرب لحالتك للحصول على رأي أكثر دقة.",
+        "booking.submit": "إرسال طلب الحجز",
+        "booking.note":
+          "نحافظ على سرية بياناتك، ونستخدمها فقط للتواصل معك بخصوص الموعد.",
+        "booking.side1.title": "استجابة سريعة",
+        "booking.side1.text": "نرد على أغلب طلبات الحجز خلال 1–2 ساعة عمل.",
+        "booking.side2.title": "مراجعة بواسطة طبيب",
+        "booking.side2.text":
+          "يتم مراجعة طلبك مباشرة بواسطة أحد أعضاء الفريق الطبي، وليس روبوت.",
+        "booking.side3.title": "سرية وأمان تام",
+        "booking.side3.text":
+          "نحافظ على خصوصية بياناتك ونستخدمها فقط لترتيب موعد الاستشارة.",
+        "final.title": "احجز استشارتك الآن",
+        "final.sub":
+          "دع فريقنا يساعدك في اختيار المسار المناسب للعلاج والرعاية التي تستحقها.",
+        "final.cta": "احجز الآن",
+        "footer.desc":
+          "رعاية شاملة في علاج الأورام تحت إشراف أساتذة من كلية طب قصر العيني.",
+        "footer.brand": "مركز الأورام",
+        "footer.contactHeading": "التواصل",
+        "footer.phoneLabel": "هاتف:",
+        "footer.whatsapp": "واتساب: نفس رقم الهاتف",
+        "footer.location":
+          "العنوان: ٢٤٧ طريق الحرية، أمام بوابة النادي، محافظة الإسكندرية",
+        "footer.followHeading": "تابعنا",
+        "footer.followText": "تابع أحدث الأخبار والمحتوى من المركز.",
+        "footer.tagline": "دائمًا هناك أمل.",
+        "footer.copyright": "© {year} مركز الأورام. جميع الحقوق محفوظة.",
+      },
+    };
 
-  const WHATSAPP_API_URL =
-    "https://serves-whathapp.al-mosawweq.com/public/api/whatsapp/send-message";
-  const WHATSAPP_NOTIFY_NUMBER = "201027776882";
-  const WHATSAPP_API_KEY =
-    "wb_c2Vzc183Nzk3ZTY5MS00NzYyLTQ0ZDMtYTRhNS0zZGIyYWFjYmM3NDI.ry2kZ4GfbJv2xZAE6OMiMn4ksxxRCGtEUOV6_MFjuuc";
+    let currentLang = "en";
 
-  function applyLanguage(lang) {
-    const isArabic = lang === "ar";
-    const root = document.documentElement;
-    root.lang = isArabic ? "ar" : "en";
-    root.dir = isArabic ? "rtl" : "ltr";
+    function applyLanguage(lang) {
+      const isArabic = lang === "ar";
+      const root = document.documentElement;
+      root.lang = isArabic ? "ar" : "en";
+      root.dir = isArabic ? "rtl" : "ltr";
 
-    const dict = translations[lang] || translations.en;
+      const dict = translations[lang] || translations.en;
 
-    document.querySelectorAll("[data-i18n]").forEach(function (el) {
-      const key = el.getAttribute("data-i18n");
-      let value = dict[key];
-      if (!value) return;
+      document.querySelectorAll("[data-i18n]").forEach(function (el) {
+        const key = el.getAttribute("data-i18n");
+        let value = dict[key];
+        if (!value) return;
 
-      if (key === "footer.copyright") {
-        const year = new Date().getFullYear();
-        value = value.replace("{year}", year.toString());
-      }
+        if (key === "footer.copyright") {
+          const year = new Date().getFullYear();
+          value = value.replace("{year}", year.toString());
+        }
 
-      el.textContent = value;
-    });
-
-    document.querySelectorAll("[data-i18n-placeholder]").forEach(function (el) {
-      const key = el.getAttribute("data-i18n-placeholder");
-      const value = dict[key];
-      if (!value) return;
-      el.setAttribute("placeholder", value);
-    });
-
-    const toggle = document.getElementById("langToggle");
-    if (toggle) {
-      const labelSpan = toggle.querySelector("span[data-i18n='toggle.label']");
-      if (labelSpan) {
-        labelSpan.textContent =
-          lang === "ar" ? translations.en["toggle.label"] : translations.ar["toggle.label"];
-      }
-    }
-  }
-
-  (function initLanguageToggle() {
-    const toggle = document.getElementById("langToggle");
-    applyLanguage(currentLang);
-
-    if (toggle) {
-      toggle.addEventListener("click", function () {
-        currentLang = currentLang === "en" ? "ar" : "en";
-        applyLanguage(currentLang);
+        el.textContent = value;
       });
+
+      document
+        .querySelectorAll("[data-i18n-placeholder]")
+        .forEach(function (el) {
+          const key = el.getAttribute("data-i18n-placeholder");
+          const value = dict[key];
+          if (!value) return;
+          el.setAttribute("placeholder", value);
+        });
+
+      const toggle = document.getElementById("langToggle");
+      if (toggle) {
+        const labelSpan = toggle.querySelector(
+          "span[data-i18n='toggle.label']",
+        );
+        if (labelSpan) {
+          labelSpan.textContent =
+            lang === "ar"
+              ? translations.en["toggle.label"]
+              : translations.ar["toggle.label"];
+        }
+      }
     }
-  })();
 
-  // Show / hide ConsulTO specialty based on service type
-  const serviceTypeSelect = document.getElementById("serviceType");
-  const consultoGroup = document.getElementById("consultoGroup");
-  const consultoSelect = document.getElementById("consultoSpecialty");
+    (function initLanguageToggle() {
+      const toggle = document.getElementById("langToggle");
+      applyLanguage(currentLang);
 
-  function updateConsultoVisibility() {
-    if (!serviceTypeSelect || !consultoGroup) return;
-    if (serviceTypeSelect.value === "ConsulTO") {
-      consultoGroup.style.display = "grid";
-    } else {
-      consultoGroup.style.display = "none";
-      if (consultoSelect) consultoSelect.value = "";
-    }
-  }
-
-  if (serviceTypeSelect) {
-    serviceTypeSelect.addEventListener("change", updateConsultoVisibility);
-    updateConsultoVisibility();
-  }
-
-  function openBookingModal(isSuccess, title, body) {
-    const modal = document.getElementById("bookingModal");
-    const wrap = document.getElementById("bookingModalIconWrap");
-    const icon = document.getElementById("bookingModalIcon");
-    const btn = document.getElementById("bookingModalClose");
-    if (!modal || !wrap || !icon) return;
-    document.getElementById("bookingModalTitle").textContent = title;
-    document.getElementById("bookingModalBody").textContent = body;
-    wrap.className =
-      "booking-modal__icon " +
-      (isSuccess ? "booking-modal__icon--success" : "booking-modal__icon--error");
-    icon.className = isSuccess ? "bx bx-check" : "bx bx-x";
-    if (btn) btn.textContent = currentLang === "ar" ? "حسنًا" : "OK";
-    modal.classList.add("is-open");
-    modal.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden";
-  }
-
-  function closeBookingModal() {
-    const modal = document.getElementById("bookingModal");
-    if (!modal) return;
-    modal.classList.remove("is-open");
-    modal.setAttribute("aria-hidden", "true");
-    document.body.style.overflow = "";
-  }
-
-  (function initBookingModal() {
-    const modal = document.getElementById("bookingModal");
-    const backdrop = document.getElementById("bookingModalBackdrop");
-    const btn = document.getElementById("bookingModalClose");
-    if (backdrop) backdrop.addEventListener("click", closeBookingModal);
-    if (btn) btn.addEventListener("click", closeBookingModal);
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && modal && modal.classList.contains("is-open")) {
-        closeBookingModal();
-      }
-    });
-  })();
-
-  // Booking form → WhatsApp API (notification to clinic number)
-  const bookingForm = document.getElementById("bookingForm");
-  const bookingSubmit = document.getElementById("bookingSubmit");
-
-  if (bookingForm && bookingSubmit) {
-    bookingForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      if (!bookingForm.checkValidity()) {
-        bookingForm.reportValidity();
-        return;
-      }
-
-      const name = document.getElementById("patientName")?.value || "";
-      const phone = document.getElementById("phone")?.value || "";
-      const service =
-        serviceTypeSelect &&
-        serviceTypeSelect.options[serviceTypeSelect.selectedIndex]
-          ? serviceTypeSelect.options[serviceTypeSelect.selectedIndex].text
-          : "";
-      const consulto =
-        consultoSelect && consultoSelect.value ? consultoSelect.value : "";
-
-      let message;
-
-      if (currentLang === "ar") {
-        message =
-          "طلب حجز موعد جديد من موقع تِرياق:\n\n" +
-          "الاسم: " +
-          name +
-          "\n" +
-          "رقم الهاتف: " +
-          phone +
-          "\n" +
-          "نوع الخدمة: " +
-          service +
-          (consulto ? "\nتخصّص كونسلتو: " + consulto : "") +
-          "\n\n(من نموذج الحجز على الموقع)";
-      } else {
-        message =
-          "New appointment request (Teriaq website):\n\n" +
-          "Patient Name: " +
-          name +
-          "\n" +
-          "Phone Number: " +
-          phone +
-          "\n" +
-          "Service Type: " +
-          service +
-          (consulto ? "\nConsulto Specialty: " + consulto : "") +
-          "\n\n" +
-          "Submitted via the online booking form.";
-      }
-
-      bookingSubmit.disabled = true;
-      const prevLabel = bookingSubmit.innerHTML;
-      bookingSubmit.textContent =
-        currentLang === "ar" ? "جاري الإرسال..." : "Sending...";
-
-      fetch(WHATSAPP_API_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({
-          phoneNumber: WHATSAPP_NOTIFY_NUMBER,
-          message: message,
-          api_key: WHATSAPP_API_KEY
-        })
-      })
-        .then(function (res) {
-          if (!res.ok) {
-            return res.text().then(function (t) {
-              throw new Error(t || res.statusText);
-            });
-          }
-          return res.json().catch(function () {
-            return {};
-          });
-        })
-        .then(function () {
-          if (currentLang === "ar") {
-            openBookingModal(
-              true,
-              "تم الإرسال بنجاح",
-              "شكرًا لك. تم إرسال طلبك، وسيتواصل معك فريقنا قريبًا."
-            );
-          } else {
-            openBookingModal(
-              true,
-              "Request sent",
-              "Thank you. Your request has been sent. Our team will contact you shortly."
-            );
-          }
-          bookingForm.reset();
-          updateConsultoVisibility();
-        })
-        .catch(function () {
-          if (currentLang === "ar") {
-            openBookingModal(
-              false,
-              "تعذّر الإرسال",
-              "تعذّر إرسال الطلب عبر الواتساب. جرّب مرة أخرى أو تواصل معنا بالهاتف."
-            );
-          } else {
-            openBookingModal(
-              false,
-              "Could not send",
-              "Could not send the request via WhatsApp. Please try again or call us."
-            );
-          }
-        })
-        .finally(function () {
-          bookingSubmit.disabled = false;
-          bookingSubmit.innerHTML = prevLabel;
+      if (toggle) {
+        toggle.addEventListener("click", function () {
+          currentLang = currentLang === "en" ? "ar" : "en";
           applyLanguage(currentLang);
         });
-    });
-  }
+      }
+    })();
 
-  // Final footer year
-  const finalYear = document.getElementById("finalYear");
-  if (finalYear) {
-    finalYear.textContent = new Date().getFullYear();
-  }
-</script>
+    // Show / hide ConsulTO specialty based on service type
+    const serviceTypeSelect = document.getElementById("serviceType");
+    const consultoGroup = document.getElementById("consultoGroup");
+    const consultoSelect = document.getElementById("consultoSpecialty");
+
+    function updateConsultoVisibility() {
+      if (!serviceTypeSelect || !consultoGroup) return;
+      if (serviceTypeSelect.value === "ConsulTO") {
+        consultoGroup.style.display = "grid";
+      } else {
+        consultoGroup.style.display = "none";
+        if (consultoSelect) consultoSelect.value = "";
+      }
+    }
+
+    if (serviceTypeSelect) {
+      serviceTypeSelect.addEventListener("change", updateConsultoVisibility);
+      updateConsultoVisibility();
+    }
+
+    function openBookingModal(isSuccess, title, body) {
+      const modal = document.getElementById("bookingModal");
+      const wrap = document.getElementById("bookingModalIconWrap");
+      const icon = document.getElementById("bookingModalIcon");
+      const btn = document.getElementById("bookingModalClose");
+      if (!modal || !wrap || !icon) return;
+      document.getElementById("bookingModalTitle").textContent = title;
+      document.getElementById("bookingModalBody").textContent = body;
+      wrap.className =
+        "booking-modal__icon " +
+        (isSuccess
+          ? "booking-modal__icon--success"
+          : "booking-modal__icon--error");
+      icon.className = isSuccess ? "bx bx-check" : "bx bx-x";
+      if (btn) btn.textContent = currentLang === "ar" ? "حسنًا" : "OK";
+      modal.classList.add("is-open");
+      modal.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeBookingModal() {
+      const modal = document.getElementById("bookingModal");
+      if (!modal) return;
+      modal.classList.remove("is-open");
+      modal.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+
+    (function initBookingModal() {
+      const modal = document.getElementById("bookingModal");
+      const backdrop = document.getElementById("bookingModalBackdrop");
+      const btn = document.getElementById("bookingModalClose");
+      if (backdrop) backdrop.addEventListener("click", closeBookingModal);
+      if (btn) btn.addEventListener("click", closeBookingModal);
+      document.addEventListener("keydown", function (e) {
+        if (
+          e.key === "Escape" &&
+          modal &&
+          modal.classList.contains("is-open")
+        ) {
+          closeBookingModal();
+        }
+      });
+    })();
+
+    // Booking form → save via PHP to data/messages.json
+    const bookingForm = document.getElementById("bookingForm");
+    const bookingSubmit = document.getElementById("bookingSubmit");
+
+    if (bookingForm && bookingSubmit) {
+      bookingForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        if (!bookingForm.checkValidity()) {
+          bookingForm.reportValidity();
+          return;
+        }
+
+        const name = document.getElementById("patientName")?.value || "";
+        const phone = document.getElementById("phone")?.value || "";
+        const service =
+          serviceTypeSelect &&
+          serviceTypeSelect.options[serviceTypeSelect.selectedIndex]
+            ? serviceTypeSelect.options[serviceTypeSelect.selectedIndex].text
+            : "";
+        const consulto =
+          consultoSelect && consultoSelect.value ? consultoSelect.value : "";
+
+        bookingSubmit.disabled = true;
+        const prevLabel = bookingSubmit.innerHTML;
+        bookingSubmit.textContent =
+          currentLang === "ar" ? "جاري الحفظ..." : "Saving...";
+
+        fetch("api/messages.php", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            patientName: name,
+            phone: phone,
+            service: service,
+            consulto: consulto,
+            lang: currentLang,
+          }),
+        })
+          .then(function (res) {
+            if (!res.ok) {
+              return res.text().then(function (t) {
+                throw new Error(t || res.statusText);
+              });
+            }
+            return res.json().catch(function () {
+              return {};
+            });
+          })
+          .then(function () {
+            if (typeof gtag === "function") {
+              gtag("event", "conversion", {
+                send_to: "AW-11038407660/oR_qCMzWk5ocEOz3wo8p",
+                event_callback: function () {
+                  console.log("Conversion fired successfully");
+                },
+              });
+              gtag("event", "Book");
+            }
+
+            if (currentLang === "ar") {
+              openBookingModal(
+                true,
+                "تم حفظ الطلب",
+                "شكرًا لك. تم تسجيل طلبك، وسيتواصل معك فريقنا قريبًا.",
+              );
+            } else {
+              openBookingModal(
+                true,
+                "Request saved",
+                "Thank you. Your request has been saved. Our team will contact you shortly.",
+              );
+            }
+            bookingForm.reset();
+            updateConsultoVisibility();
+          })
+          .catch(function () {
+            if (currentLang === "ar") {
+              openBookingModal(
+                false,
+                "تعذّر الحفظ",
+                "تعذّر حفظ الطلب. جرّب مرة أخرى أو تواصل معنا بالهاتف.",
+              );
+            } else {
+              openBookingModal(
+                false,
+                "Could not save",
+                "Could not save your request. Please try again or call us.",
+              );
+            }
+          })
+          .finally(function () {
+            bookingSubmit.disabled = false;
+            bookingSubmit.innerHTML = prevLabel;
+            applyLanguage(currentLang);
+          });
+      });
+    }
+
+    // Final footer year
+    const finalYear = document.getElementById("finalYear");
+    if (finalYear) {
+      finalYear.textContent = new Date().getFullYear();
+    }
+
+    // Tracking floating contact buttons
+    (function initContactTracking() {
+      const waBtn = document.querySelector(".floating-btn.whatsapp");
+      const phoneBtn = document.querySelector(".floating-btn.phone");
+
+      if (waBtn) {
+        waBtn.addEventListener("click", function () {
+          if (typeof gtag === "function") {
+            gtag("event", "whatsapp_click", {
+              event_category: "Contact",
+              event_label: "Floating WhatsApp Button",
+            });
+            // Fire conversion for WhatsApp as well if needed
+            gtag("event", "conversion", {
+              send_to: "AW-11038407660/oR_qCMzWk5ocEOz3wo8p",
+            });
+          }
+        });
+      }
+
+      if (phoneBtn) {
+        phoneBtn.addEventListener("click", function () {
+          if (typeof gtag === "function") {
+            gtag("event", "phone_call_click", {
+              event_category: "Contact",
+              event_label: "Floating Phone Button",
+            });
+          }
+        });
+      }
+    })();
+  </script>
 </html>
-

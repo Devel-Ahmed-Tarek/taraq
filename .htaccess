@@ -1,0 +1,5 @@
+# Pretty URL: /messages → messages.html (Apache + mod_rewrite)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^messages/?$ messages.html [L,QSA]
+</IfModule>
